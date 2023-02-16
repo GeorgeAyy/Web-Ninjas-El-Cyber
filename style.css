@@ -1,3 +1,24 @@
+<<<<<<< HEAD
 body{
     background-color: bisque;
 }
+=======
+body {
+  background-color: bisque;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  width: 18%;
+  height: 200px;
+  background-color: #f1f1f1;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+>>>>>>> c65279c6e372443682fe1cf31bd3697a530f8f61
