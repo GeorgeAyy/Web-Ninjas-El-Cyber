@@ -9,12 +9,13 @@ body {
   }
   
   .card {
-    width: 18%;
-    background-color: #f1f1f1;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
     text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
   }
   
   .card img {
@@ -31,4 +32,22 @@ body {
     letter-spacing: 1px;
 
 
+  }
+  h1{
+    text-align: center;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+  }
+  .card-description {
+    padding: 20px;
+    font-size: 14px;
+    color: #999;
+  }
+  .card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
   }
