@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: #d6d0c2;
 }
 .card-container {
     display: flex;
@@ -9,7 +9,7 @@ body {
   }
   
   .card {
-    max-width: 300px;
+    max-width: 270px;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,11 +30,16 @@ body {
     font-family:monospace;
     font-weight: bold;
     letter-spacing: 1px;
+    
 
 
   }
   h1{
     text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
   }
   .card:hover {
     transform: translateY(-10px);
