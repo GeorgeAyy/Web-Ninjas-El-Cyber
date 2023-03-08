@@ -1,4 +1,11 @@
 h1{
+
+    text-align: center;
+   
+    border: 10px double rosybrown;
+    padding: 10px;
+    font-size: 40px; 
+
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
@@ -7,3 +14,4 @@ div{
 background-color: blue;
 border: 2px solid white;
 }
+
