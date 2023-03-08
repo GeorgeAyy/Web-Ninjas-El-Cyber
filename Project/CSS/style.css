@@ -1,8 +1,17 @@
 h1{
+
     text-align: center;
-    color: brown;
+   
     border: 10px double rosybrown;
     padding: 10px;
-    font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}   
+    font-size: 40px; 
+
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+div{
+    
+background-color: blue;
+border: 2px solid white;
+}
+
