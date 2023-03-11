@@ -139,7 +139,63 @@
  </div>
 </div>
 </div> 
- 
+ <!-- Image slider start -->
+ <div class="container">
+  <div class="Slider">
+    <div class="Slides">
+      <!--Radio buttons start -->
+      <input
+        type="radio"
+        name="radio-btn"
+        id="radio1"
+        onclick="displayImage(0)"
+      />
+      <input
+        type="radio"
+        name="radio-btn"
+        id="radio2"
+        onclick="displayImage(1)"
+      />
+      <input
+        type="radio"
+        name="radio-btn"
+        id="radio3"
+        onclick="displayImage(2)"
+      />
+      <input
+        type="radio"
+        name="radio-btn"
+        id="radio4"
+        onclick="displayImage(3)"
+      />
+      <!--Radio buttons end-->
+      <!-- Slide images start-->
+      <div class="image">
+        <img src="./Images/image1.webp" alt="Advertisement 1" />
+      </div>
+      <div class="image">
+        <img src="./Images/image2.webp" alt="Advertisement 2" />
+      </div>
+      <div class="image">
+        <img src="./Images/image3.webp" alt="Advertisement 3" />
+      </div>
+      <div class="image">
+        <img src="./Images/image4.webp" alt="Advertisement 4" />
+      </div>
+      <!-- Slide images end-->
+    </div>
+    <!-- Manual Navigation Start -->
+    <div class="Navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!-- Manual Navigation End -->
+  </div>
+  <!--End of image slider -->
+</div>
+<script src="./JS/handler.js"></script>
 
 </body>
 </html>
