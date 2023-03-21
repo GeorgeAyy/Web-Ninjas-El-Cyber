@@ -460,28 +460,159 @@ margin: auto; */
   color: #878787;
 }
 
-.email-input {
+.Follow-Us{
+  display:inline-block ;
+  flex-wrap: wrap;
+}
 
-  width: 100%;
-  line-height: 24px;
-  transition: border-color .5s;
-  box-shadow: none;
-  /* -webkit-appearance: none;
-      -moz-appearance: none; */
-  appearance: none;
-  font-size: 13px;
-  outline: 0;
-  color: #878787;
-  max-width: 100%;
+.Follow-Us .icon-row  {
+ display: inline-flex;
+ flex-wrap: wrap;
+}
+.Follow-Us .icon-row .button{
+  border-radius: 50px;
+ width:40px;
+ height:40px;
+ text-align: center;
+ justify-content: center;
+ margin: 0 5px ;
+ background-color: transparent;
+ transition: all 0.7s ease; 
+}
+.button:hover{
+  transform: translateY(-5px);
+}
+.Follow-Us .icon-row .button .icon{
+  padding: 4px;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  /* display: inline-flex; */
+    transition: all 0.5s ease;  
+}
+/* .Follow-Us .icon-row .button .icon a{
+text-decoration: none;
+} */
+.button .icon i{
+color:black;
+font-size: 30px;
+
+/* line-height: 70px;
+font-weight:400 ; */
+}
+.button:nth-child(1):hover .icon i{
+  color: #3b5998
+  }
+  .button:nth-child(2):hover .icon i{
+  color: #e03566;
+  }
+  .button:nth-child(3):hover .icon i{
+  color: #0077B5;
+  }
+  .icon  .tooltiptext {
+      visibility: hidden;
+      width: 123px;
+      background-color: #333;
+      color: #fff;
+       text-align: center; 
+      padding: 5px ;
+      position: absolute;
+      z-index: 20;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+      font-size: 12px;
+    }
+    .icon  .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%; 
+      left: 45%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+}
+    .icon:hover  .tooltiptext {
+      visibility: visible;}
+.form1{
+  border:2.5px solid black;
+  display: inline-flex;
+  border-radius: 40px;
+  
+    
+}
+form{
+  border-radius: 46px;
   background-color: transparent;
+}
+form .email-input{
+  border-radius: 46px;
+  height: 20px;
+  border-color: transparent;
+  font-size: 14px;
   padding: 8px 10px;
-  border: 0;
-  border: 2px solid black;
+  max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-radius: 46px;
-
+border-top-style: none;
+}
+form .button-style{
+  
+      text-transform: none;
+      overflow: visible;
+      position: relative;
+      float: right;
+     border-radius: 46px;
+     font-size: 14px;
+     font-weight: 600;
+     padding: 0;
+     cursor: pointer;
+     height: 40px;
+    padding: 8px 10px;  
+     margin: 0;
+     line-height: 24px;
+     border: none;
+     background-color:#59533f;
+     color: #ffffff;
+     /* display: inline-block; */
+     vertical-align: top;
+     text-align: center;
+    
+     /* overflow: hidden; */
+     /* text-overflow: ellipsis; */
+     /* white-space: nowrap;  */
 
 
 }
+.button-style:hover{
+  background-color:#333;
+  cursor: pointer;
+  transition: all 0.5 ease;
+}
+.line{
+  display: block;
+  /* flex-flow: wrap; */
+  /* border: 2px solid black; */
+  margin-top: 20px;
+}
+.line .image{
+  width: 48px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  box-sizing: content-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* max-width: 100%; */
+}
+
+
+      .copyright{
+          padding: 20px 0px 5px 25px;
+          font-size: 14px;
+          color: #878787;
+         font-family: inherit;
+          display: inline-flex;
+      }
