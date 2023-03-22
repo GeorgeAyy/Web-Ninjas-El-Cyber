@@ -19,3 +19,13 @@ function displayFirst() {
 }
 displayFirst();
 // ##################  END SLIDE SHOW SCRIPT ######################
+
+function signOpen()
+{
+    document.getElementById("sidebar-1").style.display="block";
+}
+
+function signclose()
+{
+    document.getElementById("sidebar-1").style.display="none";
+}
