@@ -1,11 +1,11 @@
-h3 {
+h3.itemName{
     overflow: hidden;
     text-align: center;
     font-family: "Poppins";
     font-size: 40px;
   }
-  h3:before,
-  h3:after {
+  h3.itemName:before,
+  h3.itemName:after {
   background-color: lightgrey;
   content: "";
   display: inline-block;
@@ -15,12 +15,12 @@ h3 {
   width: 50%;
   
 }
-h3:before {
+h3.itemName:before {
 right: 0.5em;
 margin-left: -50%;
 }
 
-h3:after {
+h3.itemName:after {
   left: 0.5em;
   margin-right: -50%;
 }
@@ -47,3 +47,9 @@ h3:after {
     opacity: 0.7;
 
   }
+
+  .checked {
+    color: orange;
+  }
+
+
