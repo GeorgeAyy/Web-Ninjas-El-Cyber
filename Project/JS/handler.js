@@ -20,12 +20,18 @@ function displayFirst() {
 displayFirst();
 // ##################  END SLIDE SHOW SCRIPT ######################
 
-function signOpen()
-{
-    document.getElementById("sidebar-1").style.display="block";
+function signOpen() {
+  document.getElementById("sidebar-1").style.display = "block";
 }
 
-function signclose()
-{
-    document.getElementById("sidebar-1").style.display="none";
+function signclose() {
+  document.getElementById("sidebar-1").style.display = "none";
+}
+
+function cartOpen() {
+  document.getElementById("cartsidebar").style.display = "block";
+}
+
+function cartClose() {
+  document.getElementById("cartsidebar").style.display = "none";
 }
