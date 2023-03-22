@@ -100,15 +100,20 @@ body {
 }
 /* //////////////////////////////////// */
 .hoveringimgs{
-    position: absolute;
+    position: relative;
     display: contents;
+    width:10%;
 }
 .hover_img{
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     display: none;
+    width: 10%;
+}
+.hoveringimgs:hover .hoveredimg{
+    display: none;
 }
 .hoveringimgs:hover .hover_img{
-    display:inline;
+    display:block;
 }
