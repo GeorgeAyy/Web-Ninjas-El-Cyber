@@ -1,0 +1,84 @@
+.emptyWishlistContainer {
+  text-align: center;
+  margin-top: 10%;
+  line-height: 3;
+}
+.emptyWishlistContainer {
+  display: none;
+}
+#yourWishlist {
+  font-weight: bold;
+  font-size: 25px;
+}
+#emptyWishlist {
+  font-size: 150px;
+}
+#emptyWishlist:hover {
+  transform: none;
+  cursor: default;
+}
+.fullWishlistContainer {
+    margin:auto;
+  width: 100%;
+}
+.wishlistItemContainer {
+    margin:10%;
+    border:1px solid gray;
+    width:80%;
+    padding: 10;
+    display:flex;
+    overflow: hidden;
+}
+.wishlistImageContainer{
+    text-align: center;
+    padding:30px;
+    width:22%;
+}
+.wishlistTexts{
+    padding-top: 1.5%;
+    width:60%;
+}
+.buttonContainer{
+    margin: auto;
+    text-align: center;
+    width:25%;
+}
+#websiteLink:link{
+    text-decoration: none;
+    color:black;
+}
+#websiteLink:visited{
+text-decoration: none;
+color: black;
+
+}
+#viewButton{
+    border-radius: 15px;
+    height:40px;
+    width:80%;
+    background-color: black;
+    color:white;
+    transition: transform .2s;
+    cursor: pointer;
+}
+#viewButton:hover{
+    transform: scale(1.1);
+}
+#viewButton:hover #viewMessage{
+    display: none;
+}
+#viewButton:hover #eyeIcon{
+    display: block;
+}
+#eyeIcon{
+    color:white;
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #insideInfo{
+        display: none;
+    }
+    
+}
+/* test */
+
