@@ -34,32 +34,35 @@
     </div>
 
     <div class="header">
-       
+        <h2 style="margin-left: 30%;"> Add Product </h2>
         <div class="containerform">
-            <h2> Add Product </h2>
-            <form class="form" action="Admin.html" method="get" onsubmit="return validate1(this)">
+           <!-- /////////////////////////////////// -->
+            <form class="form" action="Admin.html" method="get" onsubmit="return validate(this)">
                 <div class="rowform">
                     <div class="col-25">
                         <label for="productname">Product Name</label>
                     </div>
                     <div class="col-75">
                         <input type="text" id="productname" name="productname" placeholder="Enter the product name..">
+                        <div id ="nameid" class="err"></div>
                     </div>
                 </div>
                 <div class="rowform">
                     <div class="col-25">
-                        <label for="lname"> Product ID</label>
+                        <label for="ID"> Product ID</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Enter product ID..">
+                        <input type="text" id="ID" name="ProductID" placeholder="Enter product ID..">
+                        <div id ="idid" class="err"></div>
                     </div>
                 </div>
+                <!-- ///////////////////////////////////////////// -->
                 <div class="rowform">
                     <div class="col-25">
-                        <label for="country">Category</label>
+                        <label for="category">Category</label>
                     </div>
                     <div class="col-75">
-                        <select id="country" name="country">
+                        <select id="category" name="category">
                             <option value="armchair">Armchair</option>
                             <option value="beds">Beds</option>
                             <option value="australia">Benches</option>
@@ -70,6 +73,7 @@
                             <option value="Pet">Pets Furniture</option>
                             <option value="space">Space Friendly</option>
                         </select>
+                        <div id="catorgyid" class="err"></div>
                     </div>
                 </div>
                 <div class="rowform">
@@ -77,7 +81,8 @@
                         <label for="subject">Choose the color avalaible</label>
                     </div>
                     <div class="col-75">
-                        <input type="color">
+                        <input id="color" name="colorpicker" type="color">
+                        <div id="colorid" class="err"></div>
                     </div>
                 </div>
                 <div class="rowform">
@@ -87,6 +92,7 @@
                     </div>
                     <div class="col-75">
                         <input type="number" min="1" step="any" id="price" name="price" placeholder="Decimals are accepted">
+                        <div id="priceid" class="err"></div>
                     </div>
                 </div>
                 <div class="rowform">
@@ -96,6 +102,7 @@
                     </div>
                     <div class="col-75">
                         <input type="number"min="1" id="quantity" name="quamtity" placeholder="Enter a whole posisitive number ..">
+                        <div id="quantityid" class="err"></div>
                     </div>
                 </div>
                 
@@ -124,6 +131,7 @@
         </div>
 
     </div>
+    <script src="./JS/admin.js"></script>
 </body>
 
 </html>

@@ -141,10 +141,17 @@ body {
 h3{
     text-align: center;
 }
-*>h2{
+h2{
     text-align: center;
     margin-top: 2%;
     margin-bottom: 3%;
+    margin-left: 30%;
+}
+@media screen and (max-width: 1000px){
+    h2{
+        margin-left: 0;
+        margin-right: 30%;
+    }
 }
 .row{
     margin-bottom: 5%;
@@ -249,4 +256,11 @@ input[type=text], select, textarea {
     div.rowform { 
         margin-left:0px;
     }
+  }
+  .err{
+
+    color:red;
+    font-size: small;
+    position: sticky;
+    right: 5%;
   }
