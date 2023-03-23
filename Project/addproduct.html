@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <style>
+
+        .sidebar a.addp {
+
+            background-color: #3C6255;
+            color: white;
+        }
+
+
+        .sidebar a:hover:not(.addp) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="dashboard" href="Admin.html">Dashboard</a>
+        <a class="products" href="products.html">Products</a>
+        <a class="orders" href="orders.html">Orders</a>
+        <a class="customers" href="customers.html">Customers</a>
+        <a class="stat" href="statistics.html">Statistics</a>
+        <a class="review" href="reviews.html">Reviews</a>
+        <a class="offers" href="offers.html">Hot Offers</a>
+        <a class="addp" href="addproduct.html">Add Product</a>
+    </div>
+
+    <div class="header">
+       
+        <div class="containerform">
+            <h2> Add Product </h2>
+            <form class="form" action="Admin.html" method="get" onsubmit="return validate1(this)">
+                <div class="rowform">
+                    <div class="col-25">
+                        <label for="productname">Product Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="productname" name="productname" placeholder="Enter the product name..">
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+                        <label for="lname"> Product ID</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Enter product ID..">
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+                        <label for="country">Category</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="armchair">Armchair</option>
+                            <option value="beds">Beds</option>
+                            <option value="australia">Benches</option>
+                            <option value="beanbag">Bean Bags</option>
+                            <option value="clounge">Chaise Lounges</option>
+                            <option value="usa">Living Room Set</option>
+                            <option value="kids">Kids Furniture</option>
+                            <option value="Pet">Pets Furniture</option>
+                            <option value="space">Space Friendly</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+                        <label for="subject">Choose the color avalaible</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="color">
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+
+                        <label for="subject">Price</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" min="1" step="any" id="price" name="price" placeholder="Decimals are accepted">
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+
+                        <label for="subject">Quantity</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number"min="1" id="quantity" name="quamtity" placeholder="Enter a whole posisitive number ..">
+                    </div>
+                </div>
+                
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+                        <label for="subject">Comments</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="leave down any comments you have about the prodduct you want to add..."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="rowform">
+                    <div class="col-25">
+
+                        <label for="subject">Provide Photo of the product</label>
+                    </div>
+                    <div class="col-65">
+                        <input type="file" id="photo" name="photo">
+                    </div>
+                <div class="rowform">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

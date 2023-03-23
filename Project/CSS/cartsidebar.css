@@ -1,0 +1,225 @@
+#cartsidebar {
+  background-color: #ffffff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
+  display: none;
+}
+#insidecart {
+  padding: 5px 0 5px 5px;
+  overflow: hidden;
+  border-top: solid 1px rgba(228, 228, 228, 0.897);
+  border-bottom: solid 1px rgba(228, 228, 228, 0.897);
+  width: 97%;
+  height: 100%;
+}
+#firstline {
+  margin-top: 10px;
+  display: flex;
+  overflow: auto;
+  height: 5%;
+}
+#cartName {
+  width: 60%;
+  font-weight: bold;
+  font-size: 15px;
+}
+#CloseButton {
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  margin: auto;
+  float: top;
+  width: 40%;
+  text-align: right;
+}
+#checkoutItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0.5px solid gray;
+  padding: 1%;
+  border-radius: 5px;
+}
+#imageOfItem {
+  flex-basis: 35%;
+  padding-right: 5px;
+}
+#itemDetails {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+#itemDetails #itemName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+#itemDetails #itemAttributes {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+#priceContainer {
+  margin-top: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  font-size: 11px;
+}
+#priceBeforeSale {
+  text-overflow: ellipsis;
+  text-decoration: line-through;
+}
+#priceAfterSale {
+  color: red;
+}
+#buttonsContainer {
+  border: 1px solid black;
+  width: 60%;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+}
+#listOfItems {
+  height: 70%;
+  width: 100%;
+  margin-top: 2.5%;
+}
+#trashBar,
+#plusBar {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#trashBar {
+  float: left;
+}
+
+#plusBar {
+  float: right;
+}
+
+#totalAmountBar {
+  font-weight: bold;
+}
+
+#trashBarDelete {
+  color: red;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.checkoutSidebarBottom {
+  margin-top: 10%;
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.addOrderStuff {
+  width: 80%;
+  height: 40%;
+  text-align: center;
+}
+.subtotalContainer {
+  width: 80%;
+  text-align: center;
+  margin-top: 10%;
+}
+#addNote,
+#addCoupon {
+  font-weight: bold;
+  border: 1px solid black;
+  height: 60%;
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 5px;
+}
+#subtotalMessage,
+#subtotalPrice {
+  font-size: 20px;
+  font-weight: bold;
+}
+#subtotalMessage {
+  float: left;
+}
+#subtotalPrice {
+  float: right;
+}
+.acceptTermsContainer {
+  width: 80%;
+  text-align: center;
+}
+.viewandcheckcontainer {
+  width: 80%;
+  text-align: center;
+}
+#agreewithterms {
+  font-size: 15px;
+}
+#checkboxid{
+    transition: 1s;
+}
+.viewandcheckcontainer #viewcart {
+  border: 1px solid black;
+  height:40px;
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 20px;
+  background-color: #222222;
+  font-weight: bold;
+  color:white;
+  transition: 1s;
+  cursor: pointer;
+}
+.viewandcheckcontainer #checkout {
+  border: 1px solid black;
+  height:40px;
+  width: 100%;
+  margin-top: 2%;
+  border-radius: 20px;
+  color:white;
+  font-weight: bold;
+  background-color: #59533f;
+  transition: 1s;
+  cursor: pointer;
+}
+.viewandcheckcontainer #viewcart:hover{
+    background-color: #7a7565;
+}
+.viewandcheckcontainer #checkout:hover{
+    background-color: #525a61;
+}
+@media only screen and (max-width:1460px){
+    #cartsidebar{
+        width:45%;
+    }
+    
+}
+@media only screen and (max-width:973px){
+    #cartsidebar{
+        width:60%;
+    }
+    
+}
+@media only screen and (max-width:700px){
+    #cartsidebar{
+        width:95%;
+    }
+    
+}
