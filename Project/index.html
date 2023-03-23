@@ -178,7 +178,27 @@
       </form>
   </div>
 </div>
+<div id="forgotsidebar" class="sidebar">
 
+  <div class="insidesidebar">
+    <div class="firstline1">
+        <span id="log">RESET PASSWORD</span>
+        <button class="side-btn1" id="btnfor"><i class="material-icons" onclick="forgotclose()">close</i></button>
+    </div>
+  </div>
+
+<div class="sign">
+  <div>  <p id="p11">Lost your password? Please enter your email address.
+     You will receive a link to create a new password via email.</p></div>
+
+  <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
+      <input id="ema1" type="email" class="element" name="email" placeholder="Email Address" required >
+      <div id="em1" class="err1"></div>
+      <input class="sub" type="submit" value="Reset Password"><br>
+      <a class="forgot" onclick="backtosidebar()">Cancel</a>
+  </form>
+</div>
+</div>
 <div id="cartsidebar">
 
 
