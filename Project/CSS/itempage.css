@@ -5,10 +5,10 @@
     padding: 0;
     font-size: 14px;
 }
-.main{
+.Main{
     width: 100%;
 }
-.main .topnav {
+.Main .topnav {
     background-color: #f6f6f6;
     padding: 18px 0;
     margin-bottom: 30px;
@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.main .topnav .container1 {
+.Main .topnav .container1 {
     padding: 0 15px;
     width: 100%;
     display: flex;
@@ -25,30 +25,30 @@
    
 }
 
-.main .topnav .container1 .leftnav {
+.Main .topnav .container1 .leftnav {
     flex: 1 0 0%;
     padding: 0 15px;
     width: 100%;
     max-width: 100%;
 }
 
-.main .topnav .container1 .leftnav .naav {
+.Main .topnav .container1 .leftnav .naav {
     font-size: 13px;
     line-height: 1;
     color: #878787;
    
 }
 
-.main .topnav .container1 a {
+.Main .topnav .container1 a {
     text-decoration: none;
     color: #222222;
 }
 
-.main .topnav .container1 .leftnav .naav span {
+.Main .topnav .container1 .leftnav .naav span {
     opacity: .6;
 }
 
-.main .topnav .container1 .leftnav .naav i {
+.Main .topnav .container1 .leftnav .naav i {
     color: #222222;
     font-size: 8px;
     position: relative;
@@ -56,14 +56,14 @@
     margin: 0 5px;
 }
 
-.main .topnav .container1 .rightnav {
+.Main .topnav .container1 .rightnav {
 
     flex: 0 0 auto;
     width: auto;
     padding: 0 15px;
 }
 
-.main .topnav .container1 .rightnav i {
+.Main .topnav .container1 .rightnav i {
     position: relative;
     bottom: 6px;
     text-align: center;
@@ -99,7 +99,7 @@ img {
     margin-bottom: 30px;
 }
 
-.product .left-side .left-img .image img {
+.product .left-side .left-img .images img {
 
     object-fit: cover;
     object-position: left center;
@@ -426,7 +426,7 @@ img {
 
 
 
-.info-image .image {
+.info-images .images {
     width: 100%;
 }
 
@@ -794,14 +794,14 @@ transition: .25s;
      background-color: #c66;
  }
  
-.products .content .product-title{
+.products .Content .product-title{
     font-weight:600;
     color:#222;
     letter-spacing: 0px;
     line-height: 20px;
     font-size: 14px;
 }
-.products .content  .in{
+.products .Content  .in{
     color:#ec0101;
     text-decoration: none;
     margin-left: 6px;
