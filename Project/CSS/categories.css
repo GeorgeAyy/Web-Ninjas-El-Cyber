@@ -1,0 +1,55 @@
+h3.itemName{
+    overflow: hidden;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+  }
+  h3.itemName:before,
+  h3.itemName:after {
+  background-color: lightgrey;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position:relative;
+  vertical-align:middle;
+  width: 50%;
+  
+}
+h3.itemName:before {
+right: 0.5em;
+margin-left: -50%;
+}
+
+h3.itemName:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+  .images{
+    display: block;
+    margin-left: auto;
+    margin-right: 3px;
+    width: 90%;
+  }
+  p{
+    display: block;
+    margin-left: auto;
+    margin-right: -20px;
+    width: 90%;   
+  }
+  .images2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    
+  }
+  .pictures:hover{
+    opacity: 0.7;
+
+  }
+
+  .checked {
+    color: orange;
+  }
+
+
