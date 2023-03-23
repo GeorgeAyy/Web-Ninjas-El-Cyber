@@ -35,3 +35,46 @@ function cartOpen() {
 function cartClose() {
   document.getElementById("cartsidebar").style.display = "none";
 }
+
+function addItem() {
+  var x = parseFloat(document.getElementById("totalAmount").innerText);
+  var y = parseFloat(
+    document.getElementById("totalItemPrice").innerText.replace(/,/g, "")
+  );
+  var z = parseFloat(
+    document.getElementById("subtotalNum").innerText.replace(/,/g, "")
+  );
+  z = z - y;
+  y /= x;
+  x = x + 1;
+  document.getElementById("totalAmount").innerText = x;
+  document.getElementById("totalItemPrice").innerText = (
+    y * x
+  ).toLocaleString();
+  document.getElementById("subtotalNum").innerText = (
+    z +
+    y * x
+  ).toLocaleString();
+}
+function removeItem() {
+  if (x != 1) {
+    var x = parseInt(document.getElementById("totalAmount").innerText);
+    var y = parseFloat(
+      document.getElementById("totalItemPrice").innerText.replace(/,/g, "")
+    );
+    var z = parseFloat(
+      document.getElementById("subtotalNum").innerText.replace(/,/g, "")
+    );
+    z = z - y;
+    y /= x;
+    x--;
+    document.getElementById("totalAmount").innerText = x;
+    document.getElementById("totalItemPrice").innerText = (
+      y * x
+    ).toLocaleString();
+    document.getElementById("subtotalNum").innerText = (
+      z +
+      y * x
+    ).toLocaleString();
+  }
+}
