@@ -12,7 +12,6 @@ h3.sofa{
     padding-top: 10px;
 }
 
-<<<<<<< Updated upstream
 a{
     text-decoration: none;
 }
@@ -29,7 +28,7 @@ a{
 
 }
 
-.content{
+.contentContainer{
     width: 20%;
     height:20%;
     margin: 15px;
@@ -46,7 +45,7 @@ a{
     
 }
 
-.content:hover{
+.contentCo.contentContainer:hover{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     transform: translate(0px , -8px);
 
@@ -81,8 +80,7 @@ h6 {
     justify-content: center;
     align-items: center;
     padding:0;
-=======
-
+}
 .gallery{
     display: flex;
     flex-wrap : wrap;
@@ -91,8 +89,15 @@ h6 {
     justify-content: center;
     align-items:center;
     margin:50px 0;
-
-
+}
+.sofa_main{
+    width:80%;
+}
+.bed_main{
+    width:80%;
+}
+.buy-1 {
+  background: #5c7364;
 }
 
 .contentContainer{
@@ -151,14 +156,13 @@ h6{
 
 li{
     padding:5px;
->>>>>>> Stashed changes
+
 }
 .fa{
     font-size: 26px;
     transition: .4s;
     margin: 3px;
-
-<<<<<<< Updated upstream
+}
 li{
     padding:5px;
 }
@@ -168,9 +172,7 @@ li{
     margin: 3px;
 
 }
-=======
-}
->>>>>>> Stashed changes
+
 .checked{
     color:#ff9f43;
 }
@@ -178,11 +180,7 @@ li{
     transform: scale(1,3);
     transition: .6s;
 }
-<<<<<<< Updated upstream
-button{
-=======
 .contentContainer button{
->>>>>>> Stashed changes
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -203,13 +201,10 @@ button{
     background: #5C7364;
 
 }
-<<<<<<< Updated upstream
-=======
 .sofaMainFarrah{
 
     width:80%;
 }
->>>>>>> Stashed changes
 
 
 @media(max-width:1000px){
