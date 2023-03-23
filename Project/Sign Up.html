@@ -18,9 +18,14 @@
       'opsz' 48
     }
     </style>
-<link rel="stylesheet" href="./CSS/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    <link rel="stylesheet" href="./CSS/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
     <div class="header">
@@ -52,8 +57,6 @@
             
                <div class="col-1">
 
-                <div class="col-11">
-                    <img class="im" style="padding: 0 5px;"src="./Images/logo.png.avif" width="85px" height="95px">
                 </div>
                   
                </div>
@@ -114,16 +117,6 @@
 
                <div class="col-3">
 
-                <div class="col-33">
-                    <nav class="nav1">
-                            
-                        <ul>
-                          <button class="side-btn" onclick=></button><i class="material-icons">search</i></button>
-                          <button class="side-btn"  onclick="signOpen()"><i class="material-icons">person</i></button> 
-                          <button class="side-btn" onclick=></button><i class="material-icons">favorite</i></button>
-                          <button class="side-btn" onclick=></button><i class="material-icons">shopping_cart</i></button>
-                        </ul>
-                    </nav>
                 </div>
       
                </div>
@@ -153,23 +146,27 @@
                 <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
             </form>
         </div>
-      </div>
-
-    <div class="signup1">
-        <p class="sign1">Register</p>
     </div>
     
     <div class="sign1">
-        <form name="sign-in" action="#" method="get">
-            <input type="text" class="elemen" name="Firstname" placeholder="First Name" required><br>
-            <input  type="text" class="elemen" name="last" placeholder="Last Name" required><br>
-            <input  type="email" class="elemen" name="email" placeholder="Email" required><br>
-            <input  type="Password" class="elemen" name="pas" placeholder="Password" required><br>
+        <form name="sign-in" action="#" method="get" onsubmit='return validate(this)'>
+            
+            <input id="fir" type="text" class="elemen" name="Firstname" placeholder="First Name">
+            <div id="first" class="err"></div>
+            <input id="las" type="text" class="elemen" name="last" placeholder="Last Name">
+            <div id="last" class="err"></div>
+            <input id="ema" type="email" class="elemen" name="email" placeholder="Email">
+            <div id="em" class="err"></div>
+            <input id="pa" type="Password" class="elemen" name="pas" placeholder="Password">
+            <div id="pas" class="err"></div>
+            <input id="pac" type="Password" class="elemen" name="pasconfirm" placeholder="Confirm Password"><br>
+            <div id="con" class="err"></div>
             <input class="subm" type="submit" value="Register"><br>
         </form>
     </div>
-</div>
-<script type="text/javascript"  src="./JS/handler.js"></script>
+    </div>
+    <script type="text/javascript" src="./JS/handler.js"></script>
 
 </body>
+
 </html>

@@ -163,15 +163,49 @@
  
 </div>
 <div class="sign">
-      <form name="sign-in" action="#" method="get">
-          <input type="email" class="element" name="email" placeholder="Email" required>
-          <input style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password" required><br>
-          <span class="forgot">Forgot your password?</span><br>
+      <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
+          <input id="ema1" type="email" class="element" name="email" placeholder="Email" >
+          <div id="em1" class="err1"></div>
+          <input id="pas1"style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password">
+          <div id="passwor" class="err1"></div>
+          <span class="forgot"><button class="forgot1" name="forgotpassword" onclick="openforgotsidebar()">Forgot your password?</button></span><br>
           <input class="sub" type="submit" value="Sign In"><br>
           <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
       </form>
   </div>
 </div>
+
+<div id="forgotsidebar" class="sidebar">
+
+  <div class="insidesidebar">
+    <div class="title1">
+        <span id="log">RESET YOUR PASSWORD</span>
+        <button class="side-btn1"><i class="material-icons" onclick="forgotclose()">close</i></button>
+    </div>
+  </div>
+
+<div class="sign">
+  <p id="p11">Lost your password? Please enter your email address. You will receive a link to create a new password via email.</p>
+  <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
+      <input id="ema1" type="email" class="element" name="email" placeholder="Email Address" required >
+      <div id="em1" class="err1"></div>
+      <input class="sub" type="submit" value="Reset Password"><br>
+      <a class="forgot" onclick="backtosidebar()">Cancel</a>
+  </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="cartsidebar" class="sidebar">
 
   <div class="insidesidebar">
@@ -181,6 +215,13 @@
         <span id="log">Shopping Cart</span>
     </div>
   
+    <form name="sign-in" action="#" method="get">
+      <input type="email" class="element" name="email" placeholder="Email" required>
+      <input style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password" required><br>
+      <span class="forgot">Forgot your password?</span><br>
+      <input class="sub" type="submit" value="Sign In"><br>
+      <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
+  </form>
    
   </div>
   <div class="sign">
