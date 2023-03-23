@@ -7,6 +7,7 @@
   width: 30%;
   box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.568);
   display: none;
+  z-index: 35;
 }
 #insidecart {
   padding: 5px 0 5px 5px;
@@ -198,6 +199,14 @@
   background-color: #59533f;
   transition: 1s;
   cursor: pointer;
+}
+#viewcart a{
+  color:white;
+  text-decoration: none;
+}
+#viewcart a:visited{
+  color: white;
+  text-decoration: none;
 }
 .viewandcheckcontainer #viewcart:hover{
     background-color: #7a7565;
