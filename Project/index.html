@@ -68,7 +68,7 @@
         <div class="col-1">
 
           <div class="col-11">
-            <img class="im" style="padding: 0 5px;" src="./Images/logo.png.avif" width="85px" height="95px">
+            <a href="index.html"><img  class="im" style="padding: 0 5px;" src="./Images/logo.png.avif"alt="Walls Nation" width="85px" height="95px"></a>
           </div>
 
         </div>
@@ -178,14 +178,16 @@
 <div id="forgotsidebar" class="sidebar">
 
   <div class="insidesidebar">
-    <div class="title1">
-        <span id="log">RESET YOUR PASSWORD</span>
-        <button class="side-btn1"><i class="material-icons" onclick="forgotclose()">close</i></button>
+    <div class="firstline1">
+        <span id="log">RESET PASSWORD</span>
+        <button class="side-btn1" id="btnfor"><i class="material-icons" onclick="forgotclose()">close</i></button>
     </div>
   </div>
 
 <div class="sign">
-  <p id="p11">Lost your password? Please enter your email address. You will receive a link to create a new password via email.</p>
+  <div>  <p id="p11">Lost your password? Please enter your email address.
+     You will receive a link to create a new password via email.</p></div>
+
   <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
       <input id="ema1" type="email" class="element" name="email" placeholder="Email Address" required >
       <div id="em1" class="err1"></div>
