@@ -93,10 +93,9 @@ img {
 }
 .product .left-side {
     width: 100%;
-<<<<<<< Updated upstream
-=======
-    
->>>>>>> Stashed changes
+}
+.product .left-side .left-img>:not(:first-child){
+    display: none;
 }
 
 .product .left-side .left-img>:not(:last-child) {
@@ -107,6 +106,7 @@ img {
 
     object-fit: cover;
     object-position: left center;
+    
 }
 
 @media screen and (min-width:768px) {
