@@ -240,6 +240,17 @@ function removeItem() {
     ).toLocaleString();
   }
 }
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
 function addItemCart() {
   var x = parseFloat(document.getElementById("totalAmountBar").innerText);
   var y = parseFloat(
@@ -263,3 +274,4 @@ function removeItemCart() {
     
   }
 }
+
