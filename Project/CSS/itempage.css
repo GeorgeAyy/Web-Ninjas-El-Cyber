@@ -671,9 +671,28 @@ img {
   /* height: 100vh; */
 }
 
+.viewproduct .col-md-3{
+    width: 20%;
+  height: 20%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-left: 0;
+  transition: 0.5s;
+
+}
+
 @media screen and (max-width: 1025px) {
   .viewproduct .products {
     width: 50%;
+  }
+  .viewproduct .col-md-3{
+    width:50%;
+    height: 50%;
   }
 }
 .products {
@@ -728,25 +747,32 @@ img {
   width: 60px;
   height: 60px;
 }
-/* @media screen and (max-width:767px){
-    .product .product-image .discount{
+
+@media screen and (max-width:1024px){
+    .products .product-image .discount{
+        top:10px;
+        right:10px;
+        width: 40px;
+        height:40px;
+        padding: 4px 6px;
+
+    }
+
+ } 
+
+ @media screen and (max-width:767px){
+    .products .product-image .discount{
         top:5px;
         right:5px;
-        background-color: blue;
+        padding: 0 2px 6px 2px;
+        width: 36px;
+        height:36px;
+        font-size: 10px;
 
     }
- } */
+ } 
 
-/* @media screen and (max-width:1024px){
-    .product .product-image .discount{
-      top:10px;
-     right: 10px;
-     width: 40px;
-     height: 40px;
-     background-color: blueviolet;
-    }
 
- } */
 
 .products .product-image .product-btn {
   flex-direction: row;
@@ -766,27 +792,24 @@ img {
   bottom: -70%;
   left: 50%;
 }
-.products .product-image .product-btn:hover {
-  opacity: 1;
-  visibility: visible;
-}
+
 .products .product-image:hover .product-btn {
   bottom: 10%;
+  opacity: 1;
 }
 
 .products .product-image .product-btn a {
   flex: 0 0 auto;
   vertical-align: middle;
-  width: 40px;
+  width: 20%;
   transform: translateY(10px);
   transition: 0.3s;
   color: #000;
-  background-color: white;
   border: none;
 }
-.products .product-image .product-btn:hover a:hover {
-  color: #fff;
-  background-color: #c66;
+
+.products .product-image:hover .product-btn a:hover {
+    color: #fff;
 }
 
 .products .Content .product-title {
