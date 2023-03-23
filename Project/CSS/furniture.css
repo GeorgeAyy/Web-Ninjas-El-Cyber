@@ -3,14 +3,6 @@ body{
     font-family: "Poppins";
     background:white;
 }
-.white{font-family: "Poppins", sans-serif;
-display: block;
-width: 90%;
-color: rgb(253, 251, 251);
-text-align: center;
-font-size: 12px;
-font-weight: normal;
-margin: 5px;}
 
 
 h3.sofa{
@@ -28,6 +20,7 @@ a{
     display: flex;
     flex-wrap : wrap;
     width:100%;
+    height:100%;
     justify-content: center;
     align-items:center;
     margin:50px 0;
@@ -35,7 +28,7 @@ a{
 
 }
 
-.contentCat{
+.content{
     width: 20%;
     height:20%;
     margin: 15px;
@@ -49,9 +42,10 @@ a{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     transition: .4s;
     background: #f2f2f2;
+    
 }
 
-.contentCat:hover{
+.content:hover{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     transform: translate(0px , -8px);
 
@@ -63,6 +57,7 @@ a{
     text-align: center;
     margin: 0 auto;
     display: block;
+    border-radius: 20px;
 }
 
 
@@ -73,7 +68,7 @@ a{
     margin-left:13px;
 }
 
-.h6farrah {
+h6 {
     font-size: 26px;
     text-align: center;
     color: #222f3e;
@@ -93,6 +88,7 @@ li{
 .fa{
     font-size: 26px;
     transition: .4s;
+    margin: 3px;
 
 }
 .checked{
@@ -118,8 +114,9 @@ button{
 }
 
 
+
 .buy-1{
-    background: #2183a2;
+    background: #5C7364;
 
 }
 
