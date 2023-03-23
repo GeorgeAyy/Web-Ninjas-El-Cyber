@@ -70,7 +70,7 @@
         <div class="col-1">
 
           <div class="col-11">
-            <img class="im" style="padding: 0 5px;" src="./Images/logo.png.avif" width="85px" height="95px">
+            <a href="index.html"><img  class="im" style="padding: 0 5px;" src="./Images/logo.png.avif"alt="Walls Nation" width="85px" height="95px"></a>
           </div>
 
         </div>
@@ -165,16 +165,20 @@
  
 </div>
 <div class="sign">
-      <form name="sign-in" action="#" method="get">
-          <input type="email" class="element" name="email" placeholder="Email" required>
-          <input style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password" required><br>
-          <span class="forgot">Forgot your password?</span><br>
+      <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
+          <input id="ema1" type="email" class="element" name="email" placeholder="Email" >
+          <div id="em1" class="err1"></div>
+          <input id="pas1"style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password">
+          <div id="passwor" class="err1"></div>
+          <span class="forgot"><button class="forgot1" name="forgotpassword" onclick="openforgotsidebar()">Forgot your password?</button></span><br>
           <input class="sub" type="submit" value="Sign In"><br>
           <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
       </form>
   </div>
 </div>
+
 <div id="cartsidebar">
+
 
   <div id="insidecart">
     <div id="firstline">
@@ -182,6 +186,7 @@
         <button id ="CloseButton" onclick="cartClose()"><span class="material-icons">close</span></button>
         
     </div>
+
     <div id="listOfItems">
       <div id = "checkoutItem">
         <div id = "imageOfItem">
@@ -199,6 +204,7 @@
           </div>
           
         </div>
+
         
       </div>
       <div class="checkoutSidebarBottom">

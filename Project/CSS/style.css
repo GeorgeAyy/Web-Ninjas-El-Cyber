@@ -325,9 +325,27 @@ input[type="text"]:focus {
   font: inherit;
   box-sizing: border-box;
   font-size: 13.5px;
-  margin-bottom: 15px;
+  margin-bottom: 20%;
   color: grey;
 }
+
+.forgot1{
+
+  background-color: transparent;
+  margin: 0;
+  padding-left: 25px;
+  text-decoration: underline;
+  vertical-align: baseline;
+  font: inherit;
+  box-sizing: border-box;
+  font-size: 13.5px;
+  margin-bottom: 15px;
+  color: grey;
+    border: none;
+    position: relative;
+    right: 7%;
+}
+
 
 .signup1 {
   width: 100%;
@@ -364,6 +382,97 @@ input[type="text"]:focus {
   width: 28%;
   font-size: 15px;
   border-color: transparent;
+}
+
+@media screen and (max-width: 1128px) {
+  .sidebar {
+    width: fit-content;
+    height: auto;
+    left: 25%;
+    top: 25%;
+    z-index: 35;
+  }
+  .sidebar a {float: none;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 550px) {
+  .sidebar {
+    width: fit-content;
+    height: auto;
+    left: 15%;
+    top: 25%;
+    z-index: 35;
+  }
+  .sidebar a {float: none;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: fit-content;
+    height: auto;
+    left: 5%;
+    top: 25%;
+    z-index: 35;
+  }
+  .sidebar a {float: none;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+/*##########################################################################*/
+.err{
+
+  color:red;
+  font-size: small;
+  position: relative;
+  right: 5%;
+}
+
+.err1{
+
+  color:red;
+  font-size: small;
+  position: relative;
+  left:8%;
+}
+
+#p11{
+
+  font-size: 13px;
+  width:300px;
+  text-align: left;
+  margin-left: 5%;
+
+
+}
+
+.firstline1{
+
+  margin-top: 10px;
+  display: flex;
+  overflow: hidden;
+  height: 5%;
+}
+
+#btnfor{
+
+  background-color: inherit;
+  line-height: 18px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-left: 25%;
+  width: 50px;
 }
 
 /* ##################### END OF HEADER ####################### */
