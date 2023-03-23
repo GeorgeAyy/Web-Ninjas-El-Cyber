@@ -22,6 +22,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="./CSS/categories.css" />
+
   <style>
     .material-symbols-outlined {
       font-variation-settings:
@@ -32,6 +33,7 @@
     }
   </style>
   <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/cartsidebar.css">
   <title>Document</title>
 </head>
 
@@ -175,61 +177,62 @@
   </div>
 </div>
 
-<div id="forgotsidebar" class="sidebar">
-
-  <div class="insidesidebar">
-    <div class="firstline1">
-        <span id="log">RESET PASSWORD</span>
-        <button class="side-btn1" id="btnfor"><i class="material-icons" onclick="forgotclose()">close</i></button>
-    </div>
-  </div>
-
-<div class="sign">
-  <div>  <p id="p11">Lost your password? Please enter your email address.
-     You will receive a link to create a new password via email.</p></div>
-
-  <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
-      <input id="ema1" type="email" class="element" name="email" placeholder="Email Address" required >
-      <div id="em1" class="err1"></div>
-      <input class="sub" type="submit" value="Reset Password"><br>
-      <a class="forgot" onclick="backtosidebar()">Cancel</a>
-  </form>
-</div>
-</div>
+<div id="cartsidebar">
 
 
-
-
-
-
-
-
-
-
-
-
-<div id="cartsidebar" class="sidebar">
-
-  <div class="insidesidebar">
-    <div class="title1">
-        
-        <button class="side-btn1"><i class="material-icons" onclick="cartClose()">close</i></button>
-        <span id="log">Shopping Cart</span>
-    </div>
-  
-    <form name="sign-in" action="#" method="get">
-      <input type="email" class="element" name="email" placeholder="Email" required>
-      <input style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password" required><br>
-      <span class="forgot">Forgot your password?</span><br>
-      <input class="sub" type="submit" value="Sign In"><br>
-      <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
-  </form>
-   
-  </div>
-  <div class="sign">
+  <div id="insidecart">
+    <div id="firstline">
+      <span id = "cartName">Shopping Cart</span>
+        <button id ="CloseButton" onclick="cartClose()"><span class="material-icons">close</span></button>
         
     </div>
-  </div>
+
+    <div id="listOfItems">
+      <div id = "checkoutItem">
+        <div id = "imageOfItem">
+          <img src="./Images/AcadiaChaise.webp" width="140px" height="140px">
+        </div>
+        <div id="itemDetails">
+          <p id="itemName">Acadia Chaise Lounge / 183 x 83 CM Velvet Upholstery</p>
+          <p id="itemAttributes">Velvet Mondo (V901-17)</p> <br>
+          <div id="priceContainer"><span id="priceBeforeSale">8,870</span> <span id="priceAfterSale"> 5,390</span></div><br>
+          <div id="buttonsContainer">
+            <button class="material-symbols-outlined" id="trashBar" onclick="removeItemCart()">delete</button><span id = "totalAmountBar" >1</span><button class="material-symbols-outlined" id="plusBar" onclick="addItemCart()">add</button>
+          </div>
+          <div>
+            <span>Delete item: </span><button class="material-symbols-outlined" id="trashBarDelete">delete</button>
+          </div>
+          
+        </div>
+
+        
+      </div>
+      <div class="checkoutSidebarBottom">
+        <div class="addOrderStuff">
+          <input type="text" placeholder="Add order note" id="addNote"><br>
+          <input type="text" placeholder="Add coupon code" id="addCoupon">
+        </div>
+        <div class="subtotalContainer">
+          <span id="subtotalMessage">Subtotal:</span><span id="subtotalPrice">5,390 EGP</span>
+        </div>
+      
+        <div class="acceptTermsContainer">
+          <span style="float: left;">
+            <input type="checkbox" id="checkboxid"><span id="agreewithterms">I agree with the terms and conditions.</span>
+          </span>
+        </div>
+        <div class="viewandcheckcontainer">
+          <button id="viewcart">
+            View Cart
+          </button>
+          <button id="checkout">
+            Checkout
+          </button>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
 <script type="text/javascript"  src="./JS/handler.js"></script>
 
   <!-- Image slider start -->

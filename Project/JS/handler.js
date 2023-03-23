@@ -218,8 +218,9 @@ function addItem() {
   ).toLocaleString();
 }
 function removeItem() {
+  var x = parseInt(document.getElementById("totalAmount").innerText);
   if (x != 1) {
-    var x = parseInt(document.getElementById("totalAmount").innerText);
+    
     var y = parseFloat(
       document.getElementById("totalItemPrice").innerText.replace(/,/g, "")
     );
@@ -237,5 +238,28 @@ function removeItem() {
       z +
       y * x
     ).toLocaleString();
+  }
+}
+function addItemCart() {
+  var x = parseFloat(document.getElementById("totalAmountBar").innerText);
+  var y = parseFloat(
+    document.getElementById("priceAfterSale").innerText.replace(/,/g, "")
+  );
+  y /= x;
+  x = x + 1;
+  document.getElementById("totalAmountBar").innerText = x;
+  
+}
+function removeItemCart() {
+  var x = parseInt(document.getElementById("totalAmountBar").innerText);
+  if (x != 1) {
+   
+    var y = parseFloat(
+      document.getElementById("priceAfterSale").innerText.replace(/,/g, "")
+    );
+    y /= x;
+    x--;
+    document.getElementById("totalAmountBar").innerText = x;
+    
   }
 }
