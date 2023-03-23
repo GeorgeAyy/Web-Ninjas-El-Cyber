@@ -55,6 +55,9 @@ body {
     div.content {
         margin-left: 0;
     }
+    div.spacing{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -73,8 +76,16 @@ body {
     margin: 0 -5px;
     margin-left: 16%;
 }
+.row2{
+    display: flex;
+    margin: 0 -5px;
+    margin-left: 16%;
+}
 @media screen and (max-width:600px){
     div.row{
+        margin-left: 0px;
+    }
+    div.row2{
         margin-left: 0px;
     }
     section.hoveringimg{
@@ -92,6 +103,16 @@ body {
       width: 100%;
       display: block;
       margin-bottom: 20px;
+    }
+    .spacing{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .icontent{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
   }   
 .deals
@@ -126,4 +147,35 @@ h2{
 }
 .row{
     margin-bottom: 5%;
+}
+#trash{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 9rem
+}
+#plus{
+    background-color: transparent;
+    border:none;
+    float:right;
+    position: relative;
+    cursor: pointer;
+    padding: 1%;
+    font-size: 9rem
+}
+
+.addOrRemove{
+    width:33%;
+    text-align: center;
+}
+.spacing{
+    width: 20%;
+    margin-left:15px ;
+}
+.icontent{
+    width: 20%;
+    margin-left:15px ;
 }
