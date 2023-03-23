@@ -93,7 +93,6 @@ img {
 }
 .product .left-side {
     width: 100%;
-    
 }
 .product .left-side .left-img>:not(:first-child){
     display: none;
@@ -114,6 +113,12 @@ img {
     .product .left-side {
         flex: 0 0 auto;
         width: 58.33333333%;
+    }
+   
+}
+@media screen and (max-width:786px) {
+    .product .left-side .left-img>:not(:first-child){
+        display: none;
     }
 }
 
