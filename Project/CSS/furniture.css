@@ -12,6 +12,7 @@ h3.sofa{
     padding-top: 10px;
 }
 
+<<<<<<< Updated upstream
 a{
     text-decoration: none;
 }
@@ -80,8 +81,84 @@ h6 {
     justify-content: center;
     align-items: center;
     padding:0;
+=======
+
+.gallery{
+    display: flex;
+    flex-wrap : wrap;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items:center;
+    margin:50px 0;
+
+
 }
 
+.contentContainer{
+    width: 20%;
+    height:20%;
+    margin: 15px;
+    box-sizing:border-box;
+    float:left;
+    text-align:center;
+    border-radius:20px;
+    cursor:pointer;
+    padding-top:10px;
+    padding-left: 0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: .4s;
+    background: #f2f2f2;
+    
+}
+
+.contentContainer:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transform: translate(0px , -8px);
+
+}
+
+.productImage{
+    width: 200px;
+    height:200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+}
+
+
+.description{
+    color: #b2b3c3;
+    padding-top: 0 200px;
+    font-size: 15px;
+    margin-left:13px;
+}
+
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin:0;
+}
+.rating{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+}
+
+li{
+    padding:5px;
+>>>>>>> Stashed changes
+}
+.fa{
+    font-size: 26px;
+    transition: .4s;
+    margin: 3px;
+
+<<<<<<< Updated upstream
 li{
     padding:5px;
 }
@@ -91,6 +168,9 @@ li{
     margin: 3px;
 
 }
+=======
+}
+>>>>>>> Stashed changes
 .checked{
     color:#ff9f43;
 }
@@ -98,7 +178,11 @@ li{
     transform: scale(1,3);
     transition: .6s;
 }
+<<<<<<< Updated upstream
 button{
+=======
+.contentContainer button{
+>>>>>>> Stashed changes
     text-align: center;
     font-size: 24px;
     color: #fff;
@@ -119,6 +203,13 @@ button{
     background: #5C7364;
 
 }
+<<<<<<< Updated upstream
+=======
+.sofaMainFarrah{
+
+    width:80%;
+}
+>>>>>>> Stashed changes
 
 
 @media(max-width:1000px){
