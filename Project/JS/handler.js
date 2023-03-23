@@ -39,7 +39,7 @@ function cartClose() {
 
 function validateFirstName(field){
   if(field==''){
-    document.getElementById('first').innerHTML='You Must Enter your first name !';
+    document.getElementById('first').innerHTML='You must enter your first name !';
     document.getElementById('fir').style.borderColor='red';
     return false;
   }
@@ -52,7 +52,7 @@ function validateFirstName(field){
 
 function validateLastName(field){
   if(field==''){
-    document.getElementById('last').innerHTML='You Must Enter your Last name !';
+    document.getElementById('last').innerHTML='You must enter your Last name !';
     document.getElementById('las').style.borderColor='red';
     return false;
   }
@@ -66,13 +66,17 @@ function validateLastName(field){
 function validatePassword(field1, field2){
   let valid=true;
   if(field1==''){
-    document.getElementById('pas').innerHTML='You Must Enter a Password !';
+    document.getElementById('pas').innerHTML='You must enter a password !';
     document.getElementById('pa').style.borderColor='red'; 
     document.getElementById('pac').style.borderColor='red';
 
     valid=false;
     
     
+  }
+  else if(field1.length!=8){
+    document.getElementById('pas').innerHTML='Password must be at least 8 characters !';
+    document.getElementById('pa').style.borderColor='red'; 
   }
   else{
     document.getElementById('pas').innerHTML='';
@@ -95,7 +99,7 @@ function validatePassword(field1, field2){
 function validateEmail(email) {
   if(email=='')
   {
-    document.getElementById('em').innerHTML='You Must Enter your email !';
+    document.getElementById('em').innerHTML='You must enter your email !';
     document.getElementById('ema').style.borderColor='red';
     valid=false;
   }
@@ -111,13 +115,17 @@ function validateEmail(email) {
 function validatePassword1(field1){
   let valid=true;
   if(field1==''){
-    document.getElementById('passwor').innerHTML='You Must Enter a Password !';
+    document.getElementById('passwor').innerHTML='You must enter a password !';
     document.getElementById('pas1').style.borderColor='red'; 
     valid=false;
     
     
   }
-  else if(field1!="fyngz"){
+  else if(field1.length!=8){
+    document.getElementById('passwor').innerHTML='Password must be at least 8 characters !';
+    document.getElementById('pas1').style.borderColor='red'; 
+  }
+  else if(field1!="fyngz!.!"){
     document.getElementById('passwor').innerHTML='Wrong password !';
     document.getElementById('pas1').style.borderColor='red'; 
 
@@ -146,7 +154,7 @@ function validate(form){
 function validateEmail1(email) {
   if(email=='')
   {
-    document.getElementById('em1').innerHTML='You Must Enter your email !';
+    document.getElementById('em1').innerHTML='You must enter your email !';
     document.getElementById('ema1').style.borderColor='red';
     valid=false;
   }
@@ -241,16 +249,6 @@ function removeItem() {
   }
 }
 
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
 function addItemCart() {
   var x = parseFloat(document.getElementById("totalAmountBar").innerText);
   var y = parseFloat(
@@ -274,4 +272,3 @@ function removeItemCart() {
     
   }
 }
-
