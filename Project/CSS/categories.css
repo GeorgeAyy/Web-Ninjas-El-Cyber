@@ -26,21 +26,18 @@ h3.itemName:after {
 }
   .images{
     display: block;
-    margin-left: auto;
+    text-align: center;
     margin-right: 3px;
-    width: 90%;
   }
   p{
     display: block;
-    margin-left: auto;
+    text-align: center;
     margin-right: -20px;
-    width: 90%;   
   }
   .images2{
     display: block;
-    margin-left: auto;
+    text-align: center;
     margin-right: auto;
-    width: 90%;
     
   }
   .pictures:hover{
