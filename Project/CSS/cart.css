@@ -1,0 +1,185 @@
+#emptyCart{
+    font-size: 150px;
+  }
+  #emptyCart:hover{
+    transform: none;
+    cursor: default;
+  }
+  #yourCart{
+    font-weight: bold;
+    font-size: 25px;
+  }
+  #returnButton{
+    margin-top: 20px;
+    color:white;
+    background-color: black;
+    border:none;
+    font-weight: bold;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  #returnButton:hover{
+    cursor: pointer;
+    background-color: #59533f;
+  }
+  #mainContainer{
+    display:none;
+  }
+  .emptyCartContainer{
+    display: none;
+  }
+  .listOfItems{
+    width:100%;
+    padding:0;
+    margin-top: 2%;
+  }
+  .itemTopContainer{
+    
+    padding:20px;
+    
+    overflow: auto;
+  }
+.itemContainer{
+    margin:2.5%;
+    border:0.5px solid gray;
+    height: 10%;
+    width:95%;
+    
+}
+  .firstSentence{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .imageSpan{
+    float:left;
+    width:15%;
+  }
+  .imageSpan img{
+
+    height: 100%;
+    width: 100%;
+
+
+  }
+.itemBottomContainer{
+    width:100%;
+    display: flex;
+
+}
+#pricePlusDiscount{
+    padding-left: 5%;
+    width:33%;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+.emptyCartContainer{
+    text-align: center;
+    margin-top: 10%;
+    line-height: 3;
+  }
+.firstSentence, .square,.trash{
+    margin-top: 2%;
+} 
+.theColor{
+    font-weight: bold;
+}
+.addOrRemove{
+    width:33%;
+    text-align: center;
+}
+.addRemoveContainer{
+    text-align: center;
+    width:50%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+#trash{
+    background-color: transparent;
+    border: none;
+    float: left;
+    cursor: pointer;
+    padding: 1%;
+}
+#plus{
+    background-color: transparent;
+    border:none;
+    float:right;
+    cursor: pointer;
+    padding: 1%;
+}
+#finalPrice{
+    width:33%;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+.checkoutContainer{
+    display: flex;
+    width:100%;
+}
+.leftSideOfCheck{
+    margin:2%;
+    width:50%;
+}
+#howCanWeHelp{
+    margin-top: 1%;
+    resize: none;
+    display:inline-block;
+    width: 80%;
+    height:20vh;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+#totalAmount{
+    font-weight: bold;
+}
+#couponcode{
+    width:80%;
+    height:4vh;
+    font-weight: bold;
+}
+.rightSideOfCheck{
+    margin:2%;
+    width:50%;
+}
+#subtotal{
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+#checkoutButtonContainer{
+    text-align: right;
+}
+#checkoutButton{
+    text-align: center;
+    padding: 0;
+    width:65%;
+    border-radius: 30px;
+    height:40px;
+    letter-spacing: 3px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+
+}
+#checkoutButton:hover{
+    background-color: #59533f;
+    cursor: pointer;
+}
+#arrowicon{
+    background-color: transparent;
+    border: none;
+    margin:0;
+    padding:0;
+    font-size: 12px;
+}
+#checkout{
+    font-size: 15px;
+}
