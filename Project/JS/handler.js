@@ -112,7 +112,7 @@ function validateEmail(email) {
   return regular_expressions.test(String(email).toLocaleLowerCase());
 }
 
-function validatePassword1(field1){
+function validatePassword1(field1 , field2){
   let valid=true;
   if(field1==''){
     document.getElementById('passwor').innerHTML='You must enter a password !';
@@ -125,10 +125,13 @@ function validatePassword1(field1){
     document.getElementById('passwor').innerHTML='Password must be at least 8 characters !';
     document.getElementById('pas1').style.borderColor='red'; 
   }
-  else if(field1!="fyngz!.!"){
+  else if((field1!="fyngz!.!" && field2=="fyngz@gmail.com")||(field1!="admin!.!" && field2=="admin@gmail.com")){
     document.getElementById('passwor').innerHTML='Wrong password !';
     document.getElementById('pas1').style.borderColor='red'; 
-
+  }
+  else if(field1=="admin!.!" && field2=="admin@gmail.com")
+  {
+    window.location.href="Admin.html";
   }
   else{
     document.getElementById('passwor').innerHTML='';
@@ -152,13 +155,14 @@ function validate(form){
 }
 
 function validateEmail1(email) {
+  console.log(email);
   if(email=='')
   {
     document.getElementById('em1').innerHTML='You must enter your email !';
     document.getElementById('ema1').style.borderColor='red';
     valid=false;
   }
-  else if(email!="fyngz@gmail.com"){
+  else if(email!="fyngz@gmail.com" && email!="admin@gmail.com"){
     document.getElementById('em1').innerHTML='Not registered on this email !';
     document.getElementById('ema1').style.borderColor='red'; 
   }
@@ -198,7 +202,7 @@ function backtosidebar()
 function validate1(form){
   let fail='';
   fail&=validateEmail1(form.email.value.trim());
-  fail&=validatePassword1(form.pas.value);
+  fail&=validatePassword1(form.pas.value,form.email.value.trim());
   if(fail)
     return true;
   else{
