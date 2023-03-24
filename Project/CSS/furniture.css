@@ -224,3 +224,7 @@ li{
       width:100%;
   }
 }
+
+.contentContainer a, .contentContainer a:visited,.contentContainer  a:hover,.contentContainer  a:active{
+  color:inherit;
+}
