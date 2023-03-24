@@ -90,11 +90,10 @@ h6 {
   align-items:center;
   margin:50px 0;
 }
-.sofa_main{
-  width:80%;
-}
+
 .bed_main{
   width:80%;
+  display:grid;
 }
 .buy-1 {
 background: #5c7364;
@@ -132,6 +131,13 @@ background: #5c7364;
   border-radius: 20px;
 }
 
+.mainPicFarrah{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 .description{
   color: #b2b3c3;
@@ -195,26 +201,26 @@ li{
 
 }
 
-
-
 .buy-1{
   background: #5C7364;
 
 }
 .sofaMainFarrah{
 
-  width:80%;
+  display: block;
+  margin: 0 auto;
+      width: 100%;
 }
 
 
 @media(max-width:1000px){
-  .content{
+  .contentContainer{
       width:45%;
   }
 }
 
 @media(max-width:750px){
-  .content{
+  .contentContainer{
       width:100%;
   }
 }
