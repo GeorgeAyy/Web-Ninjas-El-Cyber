@@ -30,4 +30,14 @@ Experience the convenience of online furniture shopping through our web applicat
 
 [https://georgeayy.github.io/Web-Ninjas-El-Cyber](https://georgeayy.github.io/Web-Ninjas-El-Cyber)
 
+## Contact Us
+
+Need help or have a question? Feel free to reach out to us!
+
+[![George Aziz](https://img.shields.io/badge/George%20Aziz-Contact-blue)](mailto:george2100977@miuegypt.edu.eg)
+[![Zeina Hesham](https://img.shields.io/badge/Zeina%20Hesham-Contact-blue)](mailto:Zeina2101569@miuegypt.edu.eg)
+[![Nouran Mohamed](https://img.shields.io/badge/Nouran%20Mohamed-Contact-blue)](mailto:nouran2110183@miuegypt.edu.eg)
+[![Yassmin Ezzat](https://img.shields.io/badge/Yassmin%20Ezzat-Contact-blue)](mailto:yassmin2104022@miuegypt.edu.eg)
+[![Farrah Hany](https://img.shields.io/badge/Farrah%20Hany-Contact-blue)](mailto:farah2102625@miuegypt.edu.eg)
+
 Thank you for choosing FRNTR for your furniture needs. We're committed to delivering premium products and exceptional customer service.
