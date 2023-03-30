@@ -465,14 +465,33 @@
             </div>
             <div class="reviews">
                 <div class="reviews-cont">
-                    <ul class="review-top">
-                        <div class="review-slider">
-                            <li class="rev-btn"><a href="#" class="review-a">Reviews</a></li>
+                  <div class="accordion">
+                    <div class="contentBox">
+                        <div class="label">
+                            <span class="titlee">Review</span>
+                             <span class="iconp"><i class="fa-solid fa-plus"></i></span>
                         </div>
-                    </ul>
-                    <div class="review-bottom">
-
+                        <div class="conteent">
+                            <div class="review-bottom">
+                                <div class="review-bottom-1">
+                                  <div class="rate">
+                                      <span class="stars-rate">
+                                          <ul>
+                                              <li><i class="fa-regular fa-star" style="color: #f08e05;"></i></li>
+                                              <li><i class="fa-regular fa-star" style="color: #f08e05;"></i></li>
+                                              <li><i class="fa-regular fa-star" style="color: #f08e05;"></i></li>
+                                              <li><i class="fa-regular fa-star" style="color: #f08e05;"></i></li>
+                                              <li><i class="fa-regular fa-star" style="color: #f08e05;"></i></li>
+                                          </ul>
+                                      </span>
+                                  </div>
+                                  <button class="review-btn">Write a review</button>
+                                  <button class="review-btn"><i class="fa fa-sliders"></i></button>
+                                </div>
+                                <div class="rev-link">Be the first to&nbsp;<a href="#">write a review</a></div>
+                        </div>
                     </div>
+                </div>
                 </div>
 
             </div>
@@ -770,23 +789,9 @@
 
   </div>
 
-    <script>
-        var data = 1;
-        document.querySelector('.number').innerText = data;
-        function decrement() {
-            if (data <= 1) {
-                data = 1;
-            } else {
-                data--;
-                document.querySelector('.number').innerText = data;
-            }
-        }
-        function increment() {
-            data++;
-            document.querySelector('.number').innerText = data;
-        }
-    </script>
+
     <script src="./JS/handler.js"></script>
+    <script src="JS/itemPage.js"></script>
 </body>
 
 </html>
