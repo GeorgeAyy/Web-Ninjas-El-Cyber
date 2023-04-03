@@ -573,6 +573,7 @@ input[type="text"]:focus {
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
+  background:none;
 }
 
 .manual-btn:not(:last-child) {
@@ -580,7 +581,7 @@ input[type="text"]:focus {
 }
 
 .manual-btn:hover {
-  background: black;
+  background: black !important;
 }
 
 #radio1:checked ~ .first {
