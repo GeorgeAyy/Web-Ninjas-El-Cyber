@@ -820,63 +820,70 @@ font-weight:400 ; */
 .icon:hover .tooltiptext {
   visibility: visible;
 }
-.form1 {
-  border: 2.5px solid black;
-  display: inline-flex;
-  border-radius: 40px;
+.form{
+  margin: 22px 0;
 }
-form {
+.form .form-cont{
   border-radius: 46px;
-  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
 }
-form .email-input {
-  border-radius: 46px;
-  height: 20px;
-  border-color: transparent;
-  font-size: 14px;
-  padding: 8px 10px;
+.form-cont .inputt{
+   flex: 1 0 0%; 
+   width: 100%;
+   max-width: 100%; 
+}
+.form-cont .email-input{
+  line-height: 24px;
+  transition: .5s;
+  font-size: 13px;
+  outline: none;
+  color: #878787;
+  width: 100%;
   max-width: 100%;
-  overflow: hidden;
+  background-color: transparent;
+  padding: 8px 10px;
+  border: none;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-top-style: none;
-}
-form .button-style {
-  text-transform: none;
-  overflow: visible;
-  float: right;
   border-radius: 46px;
+}
+.btn-sub{
+  max-width: 33.33%;
+    min-width: 111px;
+    width: 100%;
+}
+.btn-sub .button-style{
+  text-transform: none;
+  border-radius: 40px;
   font-size: 14px;
   font-weight: 600;
-  padding: 0;
-  cursor: pointer;
-  height: 40px;
   padding: 8px 10px;
   margin: 0;
   line-height: 24px;
   border: none;
   background-color: #59533f;
-  color: #ffffff;
-  /* display: inline-block; */
+  color: white;
+  display: inline-block;
   vertical-align: top;
+  width: 100%;
   text-align: center;
-
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-  /* white-space: nowrap;  */
-}
-.button-style:hover {
-  background-color: #333;
-  cursor: pointer;
-  transition: all 0.5 ease;
+  min-width: 111px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .line {
   display: block;
-  /* flex-flow: wrap; */
-  /* border: 2px solid black; */
   margin-top: 20px;
 }
-.line .image {
+.line  a .image {
   width: 48px;
   height: 30px;
   display: inline-block;
@@ -884,7 +891,6 @@ form .button-style {
   box-sizing: content-box;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* max-width: 100%; */
 }
 
 .copyright {
