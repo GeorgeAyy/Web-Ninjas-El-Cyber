@@ -7,6 +7,7 @@ body {
 .sidebar {
     margin: 0;
     padding: 0;
+    top: 0;
     width: 15%;
     background-color: #f1f1f1;
     position: fixed;
@@ -68,8 +69,14 @@ body {
 }
 
 .header {
-    padding: 1px 16px;
-    text-align: center;
+  padding: 1px 16px;
+  text-align: center;
+position: relative;
+left:30rem;
+width: 55rem;
+}
+.dashheader{
+left:0px;
 }
 .row{
     display: flex;
@@ -145,7 +152,6 @@ h2{
     text-align: center;
     margin-top: 2%;
     margin-bottom: 3%;
-    margin-left: 30%;
 }
 @media screen and (max-width: 1000px){
     h2{
@@ -245,7 +251,8 @@ input[type=text], select, textarea {
     clear: both;
   }
   .rowform{
-    margin-left: 12%;
+    margin-left: 2rem;
+    padding-right: 2rem;
   }
   /* Responsive layout - when the screen is less than 600px wide,
     make the two columns stack on top of each other instead of next to each other */
@@ -265,3 +272,35 @@ input[type=text], select, textarea {
     position: sticky;
     right: 5%;
   }
+  .containerform{
+ 
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  textarea{
+     width: 100%;
+    box-sizing: border-box;
+
+  }
+  #submit{
+    width: auto;
+    box-sizing: none;
+  }
+.background
+{   background-color: #C9E4C5;
+    width: 100%;
+
+}
+.bod-ish{
+  padding: 1px 16px;
+  text-align: center;
+position: relative;
+left:30rem;
+width: 55rem;
+}
