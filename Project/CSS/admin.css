@@ -189,12 +189,32 @@ body {
 
 h3 {
   text-align: center;
-}
 
+}
+#hr{
+  border-color: #f0e5d3;
+  border-width: 7px;
+  border-style:none;
+  border-top-style: dotted;
+  width: 5%;
+  margin: 100px auto 100px auto;
+  position: relative;
+}
+#delete-hr
+{
+  border-color: #f0e5d3;
+  border-width: 7px;
+  border-style:none;
+  border-top-style: dotted;
+  width: 5%;
+  margin: 3rem 0  3rem 55rem;
+  position: relative;
+}
 h2 {
   text-align: center;
   margin-top: 2%;
   margin-bottom: 3%;
+  color: #f2b387;
 }
 
 @media screen and (max-width: 1000px) {
@@ -259,7 +279,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #C92C6D;
+  background-color: #f2b387;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -371,5 +391,14 @@ textarea {
     position: relative;
     left: 0rem;
     width: 100%
+  }
+  #delete-hr{
+    border-color: #f0e5d3;
+    border-width: 7px;
+    border-style:none;
+    border-top-style: dotted;
+    width: 5%;
+    margin: 100px auto 100px auto;
+    position: relative;
   }
 }
