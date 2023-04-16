@@ -44,7 +44,7 @@ body {
 }
 @media screen and (max-width: 700px) {
     .sidebar {
-        width: 100%;
+        width: 50rem;
         height: auto;
         position: relative;
     }
@@ -60,7 +60,24 @@ body {
         margin-left: 0;
     }
 }
+@media screen and (max-width: 448px) {
+  .sidebar {
+      width: 30rem;
+      height: auto;
+      position: relative;
+  }
 
+  .sidebar a {
+      float: left;
+  }
+
+  div.content {
+      margin-left: 0;
+  }
+  div.spacing{
+      margin-left: 0;
+  }
+}
 @media screen and (max-width: 400px) {
     .sidebar a {
         text-align: center;
@@ -301,6 +318,9 @@ width: 55rem;
     left:0rem;
     width:100%
     
+  }
+  h2{
+    margin-right: 0;
   }
   .bod-ish{
     position: relative;
