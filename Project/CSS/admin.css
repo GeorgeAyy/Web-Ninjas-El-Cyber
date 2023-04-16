@@ -254,17 +254,7 @@ input[type=text], select, textarea {
     margin-left: 2rem;
     padding-right: 2rem;
   }
-  /* Responsive layout - when the screen is less than 600px wide,
-    make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-    div.rowform { 
-        margin-left:0px;
-    }
-  }
+  
   .err{
 
     color:red;
@@ -303,4 +293,18 @@ input[type=text], select, textarea {
 position: relative;
 left:30rem;
 width: 55rem;
+}
+/* //////////////responviness for delete and add forms////////////////// */
+@media screen and (max-width: 700px) {
+  .header{
+    position: relative;
+    left:0rem;
+    width:100%
+    
+  }
+  .bod-ish{
+    position: relative;
+    left:0rem;
+    width:100%
+  }
 }
