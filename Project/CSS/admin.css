@@ -265,3 +265,7 @@ input[type=text], select, textarea {
     position: sticky;
     right: 5%;
   }
+  .containerform{
+    background-color: #E9EDC9;
+    width: 100%;
+  }
