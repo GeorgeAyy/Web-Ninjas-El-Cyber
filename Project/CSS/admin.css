@@ -1,330 +1,404 @@
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #FEFBE7;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #F0EEED;
 }
 
 .sidebar {
-    margin: 0;
-    padding: 0;
-    top: 0;
-    width: 15%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 15%;
+  background-color: #dfa67b;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidebar a {
-    display: block;
-    color: black;
-    padding:1.5rem;
-    text-decoration: none;
+  display: block;
+  color: black;
+  padding: 1.5rem;
+  text-decoration: none;
 }
+
 .content {
 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 20%;
-    margin-left:15px ;
-  }
-  .hoveringimgs{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width:20%;
-  }
-  .content:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  .hoveringimgs:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  .container {
-    padding: 2px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin-left: 15px;
 }
+
+.hoveringimgs {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+}
+
+.content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hoveringimgs:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 10px;
+}
+
 @media screen and (max-width: 700px) {
-    .sidebar {
-        width: 50rem;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar a {
-        float: left;
-    }
-
-    div.content {
-        margin-left: 0;
-    }
-    div.spacing{
-        margin-left: 0;
-    }
-}
-@media screen and (max-width: 448px) {
   .sidebar {
-      width: 30rem;
-      height: auto;
-      position: relative;
+    width: 50rem;
+    height: auto;
+    position: relative;
   }
 
   .sidebar a {
-      float: left;
+    float: left;
   }
 
   div.content {
-      margin-left: 0;
+    margin-left: 0;
   }
-  div.spacing{
-      margin-left: 0;
+
+  div.spacing {
+    margin-left: 0;
   }
 }
+
+@media screen and (max-width: 448px) {
+  .sidebar {
+    width: 30rem;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  div.spacing {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }
 
 .header {
   padding: 1px 16px;
   text-align: center;
-position: relative;
-left:30rem;
-width: 55rem;
+  position: relative;
+  left: 30rem;
+  width: 55rem;
 }
-.dashheader{
-left:0px;
+
+.dashheader {
+  left: 0px;
 }
-.row{
-    display: flex;
-    margin: 0 -5px;
-    margin-left: 16%;
+
+.row {
+  display: flex;
+  margin: 0 -5px;
+  margin-left: 16%;
 }
-.row2{
-    display: flex;
-    margin: 0 -5px;
-    margin-left: 16%;
+
+.row2 {
+  display: flex;
+  margin: 0 -5px;
+  margin-left: 16%;
 }
-@media screen and (max-width:600px){
-    div.row{
-        margin-left: 0px;
-    }
-    div.row2{
-        margin-left: 0px;
-    }
-    section.hoveringimg{
-        width: 50%;
-    }
+
+@media screen and (max-width:600px) {
+  div.row {
+    margin-left: 0px;
+  }
+
+  div.row2 {
+    margin-left: 0px;
+  }
+
+  section.hoveringimg {
+    width: 50%;
+  }
 
 }
+
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-    .content {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .spacing{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .icontent{
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-  }   
-.deals
-{
-    text-decoration: line-through;
+  content: "";
+  display: table;
+  clear: both;
 }
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .spacing {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .icontent {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.deals {
+  text-decoration: line-through;
+}
+
 /* //////////////////////////////////// */
-.hoveringimgs{
-    position: relative;
-    display: contents;
-    width:10%;
-}
-.hover_img{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: none;
-    width: 10%;
-}
-.hoveringimgs:hover .hoveredimg{
-    display: none;
-}
-.hoveringimgs:hover .hover_img{
-    display:block;
-}
-h3{
-    text-align: center;
-}
-h2{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 3%;
-}
-@media screen and (max-width: 1000px){
-    h2{
-        margin-left: 0;
-        margin-right: 30%;
-    }
-}
-.row{
-    margin-bottom: 5%;
-}
-#trash{
-    background-color: transparent;
-    border: none;
-    position: relative;
-    float: left;
-    cursor: pointer;
-    padding: 1%;
-    font-size: 9rem
-}
-#plus{
-    background-color: transparent;
-    border:none;
-    float:right;
-    position: relative;
-    cursor: pointer;
-    padding: 1%;
-    font-size: 9rem
+.hoveringimgs {
+  position: relative;
+  display: contents;
+  width: 10%;
 }
 
-.addOrRemove{
-    width:33%;
-    text-align: center;
-}
-.spacing{
-    width: 20%;
-    margin-left:15px ;
-}
-.icontent{
-    width: 20%;
-    margin-left:15px ;
+.hover_img {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 10%;
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .containerfrom {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
- .col-65{
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-    position: relative;
-  }
-  /* Clear floats after the columns */
-  .rowform:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .rowform{
-    margin-left: 2rem;
-    padding-right: 2rem;
-  }
-  
-  .err{
+.hoveringimgs:hover .hoveredimg {
+  display: none;
+}
 
-    color:red;
-    font-size: small;
-    position: sticky;
-    right: 5%;
-  }
-  .containerform{
- 
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  input {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  textarea{
-     width: 100%;
-    box-sizing: border-box;
+.hoveringimgs:hover .hover_img {
+  display: block;
+}
 
-  }
-  #submit{
-    width: auto;
-    box-sizing: none;
-  }
-.background
-{   background-color: #C9E4C5;
-    width: 100%;
+h3 {
+  text-align: center;
 
 }
-.bod-ish{
+#hr{
+  border-color: #f0e5d3;
+  border-width: 7px;
+  border-style:none;
+  border-top-style: dotted;
+  width: 5%;
+  margin: 100px auto 100px auto;
+  position: relative;
+}
+#delete-hr
+{
+  border-color: #f0e5d3;
+  border-width: 7px;
+  border-style:none;
+  border-top-style: dotted;
+  width: 5%;
+  margin: 3rem 0  3rem 55rem;
+  position: relative;
+}
+h2 {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: #f2b387;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    margin-left: 0;
+    margin-right: 30%;
+  }
+}
+
+.row {
+  margin-bottom: 5%;
+}
+
+#trash {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  float: left;
+  cursor: pointer;
+  padding: 1%;
+  font-size: 9rem
+}
+
+#plus {
+  background-color: transparent;
+  border: none;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  padding: 1%;
+  font-size: 9rem
+}
+
+.addOrRemove {
+  width: 33%;
+  text-align: center;
+}
+
+.spacing {
+  width: 20%;
+  margin-left: 15px;
+}
+
+.icontent {
+  width: 20%;
+  margin-left: 15px;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #f2b387;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerfrom {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-65 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  position: relative;
+}
+
+/* Clear floats after the columns */
+.rowform:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowform {
+  margin-left: 2rem;
+  padding-right: 2rem;
+}
+
+.err {
+
+  color: red;
+  font-size: small;
+  position: sticky;
+  right: 5%;
+}
+
+.containerform {
+
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+}
+
+#submit {
+  width: auto;
+  box-sizing: none;
+}
+
+.background {
+  background-color: #F0EEED;
+  width: 100%;
+
+}
+
+.bod-ish {
   padding: 1px 16px;
   text-align: center;
-position: relative;
-left:30rem;
-width: 55rem;
+  position: relative;
+  left: 30rem;
+  width: 55rem;
 }
+
 /* //////////////responviness for delete and add forms////////////////// */
 @media screen and (max-width: 700px) {
-  .header{
+  .header {
     position: relative;
-    left:0rem;
-    width:100%
-    
+    left: 0rem;
+    width: 100%
   }
-  h2{
+
+  h2 {
     margin-right: 0;
   }
-  .bod-ish{
+
+  .bod-ish {
     position: relative;
-    left:0rem;
-    width:100%
+    left: 0rem;
+    width: 100%
+  }
+  #delete-hr{
+    border-color: #f0e5d3;
+    border-width: 7px;
+    border-style:none;
+    border-top-style: dotted;
+    width: 5%;
+    margin: 100px auto 100px auto;
+    position: relative;
   }
 }
