@@ -189,7 +189,13 @@ body {
 
 h3 {
   text-align: center;
-
+  padding: 1px 16px;
+  text-align: center;
+  position: relative;
+  left: 30rem;
+  width: 55rem;
+margin-bottom: 2rem;
+margin-top: 2rem;
 }
 #hr{
   border-color: #f0e5d3;
@@ -197,7 +203,7 @@ h3 {
   border-style:none;
   border-top-style: dotted;
   width: 5%;
-  margin: 100px auto 100px auto;
+  margin: 3rem 0  3rem 55rem;
   position: relative;
 }
 #delete-hr
@@ -212,8 +218,8 @@ h3 {
 }
 h2 {
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   color: #f2b387;
 }
 
