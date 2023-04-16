@@ -266,6 +266,24 @@ input[type=text], select, textarea {
     right: 5%;
   }
   .containerform{
-    background-color: #E9EDC9;
+ 
     width: 100%;
+    box-sizing: border-box;
   }
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  textarea{
+     width: 100%;
+    box-sizing: border-box;
+  }
+  #submit{
+    width: auto;
+    box-sizing: none;
+  }
+.background
+{   background-color: #C9E4C5;
+    width: 100%;
+    
+}
