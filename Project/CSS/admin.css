@@ -372,6 +372,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
+  margin-bottom: 5%;
 }
 
 .row2 {
@@ -500,7 +501,9 @@ h2 {
   {
     margin-left: 0;
     margin-right: 30%;
-  }
+
+}
+
 }
 
 .row {
