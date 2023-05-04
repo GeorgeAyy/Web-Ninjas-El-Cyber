@@ -245,8 +245,10 @@ i {
   margin: 0;
   padding: 0;
   top: 0;
+
   background-color: #f5f3f3;
   position: relative;
+
   overflow: auto;
   min-width: 15%;
   max-height: 100%;
@@ -288,6 +290,25 @@ i {
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 50rem;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  div.spacing {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .sidebar {
+    width: rem;
     height: auto;
     position: relative;
   }
@@ -460,6 +481,7 @@ h3 {
 h2 {
   text-align: center;
   margin-top: 4rem;
+}
 
 }
 /* #subhead{
@@ -471,6 +493,11 @@ h2 {
 } */
 @media screen and (max-width: 1000px) {
   h2 {
+    margin-left: 0;
+    margin-right: 30%;
+  }
+  #subhead
+  {
     margin-left: 0;
     margin-right: 30%;
   }
@@ -531,7 +558,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #f2b387;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -664,6 +691,7 @@ textarea {
     position: relative;
   }
 }
+
 .box{
   width:100%;
   display:flex;
@@ -675,3 +703,4 @@ textarea {
 .barpage{
 display: inline-flex;
 }
+
