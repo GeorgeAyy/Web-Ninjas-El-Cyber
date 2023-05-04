@@ -1,3 +1,10 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -238,11 +245,13 @@ i {
   margin: 0;
   padding: 0;
   top: 0;
-  width: 15%;
+
   background-color: #f5f3f3;
-  position: fixed;
-  height: 100%;
+  position: relative;
+
   overflow: auto;
+  min-width: 15%;
+  max-height: 100%;
 }
 
 .sidebar a {
@@ -345,10 +354,13 @@ i {
 }
 
 .header {
-  padding: 1px 16px;
+  display: contents;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  justify-content: center;
   text-align: center;
   position: relative;
-  left: 30rem;
+  /* left: 30rem; */
   width: 55rem;
 }
 
@@ -358,8 +370,8 @@ i {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -5px;
-  margin-left: 16%;
 }
 
 .row2 {
@@ -437,14 +449,15 @@ i {
 }
 
 h3 {
-  text-align: center;
-  padding: 1px 16px;
+  /* padding-top: 1px;
+  padding-bottom: 1px;
   text-align: center;
   position: relative;
-  left: 30rem;
-  width: 55rem;
-margin-bottom: 2rem;
-margin-top: 2rem;
+  /* left: 30rem; */
+  /* width: 55rem;*/
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 #hr{
   border-color: #f0e5d3;
@@ -468,9 +481,16 @@ margin-top: 2rem;
 h2 {
   text-align: center;
   margin-top: 4rem;
-  margin-bottom: 4rem;
 }
 
+}
+/* #subhead{
+  display: contents;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 55rem;
+} */
 @media screen and (max-width: 1000px) {
   h2 {
     margin-left: 0;
@@ -633,7 +653,17 @@ textarea {
   left: 30rem;
   width: 55rem;
 }
+.gallery{
+  display: flex;
+  flex-wrap : wrap;
+  width:100%;
+  height:100%;
+  justify-content: center;
+  align-items:center;
+  margin:50px 0;
 
+
+}
 /* //////////////responviness for delete and add forms////////////////// */
 @media screen and (max-width: 700px) {
   .header {
@@ -661,6 +691,16 @@ textarea {
     position: relative;
   }
 }
-/* #subhead{
-  
-} */
+
+.box{
+  width:100%;
+  display:flex;
+  margin-top: 10px;
+}
+.sideCon{
+ height: fit-content;
+}
+.barpage{
+display: inline-flex;
+}
+
