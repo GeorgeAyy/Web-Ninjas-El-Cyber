@@ -304,6 +304,25 @@ i {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 1210px) {
+  .sidebar {
+    width: rem;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  div.spacing {
+    margin-left: 0;
+  }
+}
 
 @media screen and (max-width: 448px) {
   .sidebar {
@@ -351,6 +370,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
+  margin-bottom: 5%;
 }
 
 .row2 {
@@ -474,6 +494,11 @@ h2 {
     margin-left: 0;
     margin-right: 30%;
   }
+  #subhead
+  {
+    margin-left: 0;
+    margin-right: 30%;
+}
 }
 
 .row {
@@ -531,7 +556,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #f2b387;
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
