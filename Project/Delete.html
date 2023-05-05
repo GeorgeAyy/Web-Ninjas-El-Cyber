@@ -4,7 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/admin.css">
-    <style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+   <style>
         .sidebar a.delete {
 
             background-color: black;
@@ -20,146 +23,267 @@
 </head>
 
 <body>
+    <div class="barpage">
+        <div class="sidebar">
+            <a class="dashboard" href="Admin.html">Dashboard</a>
+            <a class="products" href="products.html">Products</a>
+            <a class="orders" href="orders.html">Orders</a>
+            <a class="customers" href="customers.html">Customers</a>
+            <a class="stat" href="statistics.html">Statistics</a>
+            <a class="review" href="reviews.html">Reviews</a>
+            <a class="offers" href="offers.html">Hot Offers</a>
+            <a class="addp" href="addproduct.html">Add Product</a>
+            <a class="delete" href="Delete.html">Delete or edit</a>
+        </div>
+        <div class="sideCon">
+            <div class="header-y">
 
-    <div class="sidebar">
-        <a class="dashboard" href="Admin.html">Dashboard</a>
-        <a class="products" href="products.html">Products</a>
-        <a class="orders" href="orders.html">Orders</a>
-        <a class="customers" href="customers.html">Customers</a>
-        <a class="stat" href="statistics.html">Statistics</a>
-        <a class="review" href="reviews.html">Reviews</a>
-        <a class="offers" href="offers.html">Hot Offers</a>
-        <a class="addp" href="addproduct.html">Add Product</a>
-        <a class="delete" href="Delete.html">Delete or edit</a>
-    </div>
+                <div class="row-1y">
+                    <div class="container-y">
+                        <div class="announcement-y">
 
-    <div class="header">
-        <h2> Delete Product </h2>
-        <div class="background">
-            <div class="containerform">
-                <!-- /////////////////delete////////////////// -->
-                <form class="form" action="Admin.html" method="get" onsubmit="return validate(this)">
-                    <div class="rowform">
-                        <div class="col-25">
-                            <label for="productname">Product Name</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="productname" name="productname"
-                                placeholder="Enter the product name..">
-                            <div id="nameid" class="err"></div>
+                            <p class="white">Free Delivery & Assembly in Cairo & Giza</p>
+
                         </div>
                     </div>
-                    <div class="rowform">
-                        <div class="col-25">
-                            <label for="ID"> Product ID</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="ID" name="ProductID" placeholder="Enter product ID..">
-                            <div id="idid" class="err"></div>
+
+                </div>
+
+                <div class="row-2y">
+                    <div class="container-y">
+                        <div class="announcement-y">
+
+                            <p class="black">Winter Sale Discount <strong class="strong1">40%</strong> off <a
+                                    class="shop-now" href="#" title="All Products">Shop Now</a></p>
+
                         </div>
                     </div>
-                    <div class="rowform" style=" margin-top: 1rem" >
-                        <input type="submit" id="submit" value="Submit">
+
+                </div>
+
+                <div class="container-1y">
+                    <div class="row-3y">
+
+                        <div class="col-1y">
+
+                            <div class="col-11y">
+
+                                <a href="index.html"><img class="im" style="padding: 0 5px;" src="./Images/logo.png"
+                                        alt="FRNTR" width="85px" height="95px"></a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-2y">
+
+                            <div class="col-22y">
+
+                                <nav class="nav1y">
+                                    <button class="dropbtn"><a class="anor" href="#">Furniture</a>
+
+
+                                        <div class="content-y">
+                                            <a class="anor" href="#">Sofas</a>
+                                            <a class="anor" href="#">Beds</a>
+                                            <a class="anor" href="#">Arm chairs</a>
+                                            <a class="anor" href="#">Chaise Lounges</a>
+                                            <a class="anor" href="#">Ottmans & Benches</a>
+                                            <a class="anor" href="#">outdoor Furniture</a>
+                                            <a class="anor" href="#">Living Room Sets</a>
+                                            <a class="anor" href="#">Space Friendly</a>
+                                            <a class="anor" href="#">Kids Furniture</a>
+                                            <a class="anor" href="#">Bean Bags</a>
+                                            <a class="anor" href="#">Pets Furniture</a>
+                                        </div>
+
+
+                                        <button class="dropbtn"><a class="anor" href="#">Storage & Display</a>
+                                            <div class="content-y">
+                                                <a class="anor" href="#">Dressers</a>
+                                                <a class="anor" href="#">TV Units</a>
+                                                <a class="anor" href="#">Consoles</a>
+                                                <a class="anor" href="#">Make-up-Vanity</a>
+                                            </div>
+                                        </button>
+                                        <button class="dropbtn"><a class="anor" href="#">Tables</a>
+                                            <div class="content-y">
+                                                <a class="anor" href="#">Night Tables</a>
+                                                <a class="anor" href="#">Coffee Tables</a>
+                                                <a class="anor" href="#">Stands</a>
+                                                <a class="anor" href="#">Night Stands</a>
+                                            </div>
+                                        </button>
+
+
+                                        <button class="dropbtn"><a class="anor" href="#">Walls Nation Moods</a>
+                                            <div class="content-y">
+                                                <a class="anor" href="#">Modern</a>
+                                                <a class="anor" href="#">Boho</a>
+                                            </div>
+                                        </button>
+
+
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-3y">
+
+                            <div class="col-33y">
+                                <nav class="nav11y">
+
+                                    <ul>
+                                        <button class="side-btn" onclick=></button><i
+                                            class="material-icons">search</i></button>
+                                        <button class="side-btn" onclick="signOpen()"><i
+                                                class="material-icons">person</i></button>
+                                        <a href="wishlist.html"><button class="side-btn" onclick=><i
+                                                    class="material-icons">favorite</i></button></a>
+                                        <button class="side-btn" onclick="cartOpen()"><i
+                                                class="material-icons">shopping_cart</i></button>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </div>
+
                     </div>
-                </form>
-                <!-- /////////////////end of delete//////////////////////////// -->
+
+                </div>
+            </div>
+            <div class="header">
+                <h2> Delete Product </h2>
+            </div>
+            <div class="gallery">
+                <div class="background">
+                    <div class="containerform">
+                        <!-- /////////////////delete////////////////// -->
+                        <form class="form" action="Admin.html" method="get" onsubmit="return validate(this)">
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="productname">Product Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="productname" name="productname"
+                                        placeholder="Enter the product name..">
+                                    <div id="nameid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="ID"> Product ID</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="ID" name="ProductID" placeholder="Enter product ID..">
+                                    <div id="idid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform" style=" margin-top: 1rem">
+                                <input type="submit" id="submit" value="Submit">
+                            </div>
+                        </form>
+                        <!-- /////////////////end of delete//////////////////////////// -->
+                    </div>
+                </div>
+          
+            <!-- <hr id="delete-hr"> -->
+            <div class="bod-ish">
+                <div class="header"></div>
+                <h2> Update in Products </h2>
+                <div class="background">
+                    <div class="containerform">
+                        <!-- //////////////////update///////////////// -->
+                        <form class="form" action="Admin.html" method="get" onsubmit="return validate1(this)">
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="productname">Product Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="upproductname" name="upproductname"
+                                        placeholder="Enter the product name..">
+                                    <div id="upnameid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="ID"> Product ID</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="upID" name="upProductID" placeholder="Enter product ID..">
+                                    <div id="upidid" class="err"></div>
+                                </div>
+                            </div>
+                            <!-- ///////////////////////////////////////////// -->
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="category">Category</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="category" name="category">
+                                        <option value="armchair">Armchair</option>
+                                        <option value="beds">Beds</option>
+                                        <option value="australia">Benches</option>
+                                        <option value="beanbag">Bean Bags</option>
+                                        <option value="clounge">Chaise Lounges</option>
+                                        <option value="usa">Living Room Set</option>
+                                        <option value="kids">Kids Furniture</option>
+                                        <option value="Pet">Pets Furniture</option>
+                                        <option value="space">Space Friendly</option>
+                                    </select>
+                                    <div id="catorgyid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform">
+                                <div class="col-25">
+                                    <label for="subject">Choose diffrent color</label>
+                                </div>
+                                <div class="col-75">
+                                    <input id="color" name="colorpicker" type="color">
+                                    <div id="colorid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform">
+                                <div class="col-25">
+
+                                    <label for="subject">Update the price</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="number" min="1" step="any" id="price" name="price"
+                                        placeholder="Decimals are accepted">
+                                    <div id="priceid" class="err"></div>
+                                </div>
+                            </div>
+                            <div class="rowform">
+                                <div class="col-25">
+
+                                    <label for="subject">Update the quantity</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="number" min="1" id="quantity" name="quamtity"
+                                        placeholder="Enter a whole posisitive number ..">
+                                    <div id="quantityid" class="err"></div>
+                                </div>
+                            </div>
+
+
+                            <div class="rowform">
+                                <div class="col-25">
+
+                                    <label for="subject">Update Photo of the product</label>
+                                </div>
+                                <div class="col-65">
+                                    <input type="file" id="photo" name="photo">
+                                </div>
+                                <div class="rowform">
+                                    <input type="submit" id="submit" value="Submit">
+                                </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <hr id="delete-hr">
-    <div class="bod-ish">
-        <h2> Update in Products </h2>
-    <div class="background">
-        <div class="containerform">
-            <!-- //////////////////update///////////////// -->
-            <form class="form" action="Admin.html" method="get" onsubmit="return validate1(this)">
-                <div class="rowform">
-                    <div class="col-25">
-                        <label for="productname">Product Name</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="upproductname" name="upproductname"
-                            placeholder="Enter the product name..">
-                        <div id="upnameid" class="err"></div>
-                    </div>
-                </div>
-                <div class="rowform">
-                    <div class="col-25">
-                        <label for="ID"> Product ID</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="upID" name="upProductID" placeholder="Enter product ID..">
-                        <div id="upidid" class="err"></div>
-                    </div>
-                </div>
-                <!-- ///////////////////////////////////////////// -->
-                <div class="rowform">
-                    <div class="col-25">
-                        <label for="category">Category</label>
-                    </div>
-                    <div class="col-75">
-                        <select id="category" name="category">
-                            <option value="armchair">Armchair</option>
-                            <option value="beds">Beds</option>
-                            <option value="australia">Benches</option>
-                            <option value="beanbag">Bean Bags</option>
-                            <option value="clounge">Chaise Lounges</option>
-                            <option value="usa">Living Room Set</option>
-                            <option value="kids">Kids Furniture</option>
-                            <option value="Pet">Pets Furniture</option>
-                            <option value="space">Space Friendly</option>
-                        </select>
-                        <div id="catorgyid" class="err"></div>
-                    </div>
-                </div>
-                <div class="rowform">
-                    <div class="col-25">
-                        <label for="subject">Choose diffrent color</label>
-                    </div>
-                    <div class="col-75">
-                        <input id="color" name="colorpicker" type="color">
-                        <div id="colorid" class="err"></div>
-                    </div>
-                </div>
-                <div class="rowform">
-                    <div class="col-25">
-
-                        <label for="subject">Update the price</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="number" min="1" step="any" id="price" name="price"
-                            placeholder="Decimals are accepted">
-                        <div id="priceid" class="err"></div>
-                    </div>
-                </div>
-                <div class="rowform">
-                    <div class="col-25">
-
-                        <label for="subject">Update the quantity</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="number" min="1" id="quantity" name="quamtity"
-                            placeholder="Enter a whole posisitive number ..">
-                        <div id="quantityid" class="err"></div>
-                    </div>
-                </div>
-
-
-                <div class="rowform">
-                    <div class="col-25">
-
-                        <label for="subject">Update Photo of the product</label>
-                    </div>
-                    <div class="col-65">
-                        <input type="file" id="photo" name="photo">
-                    </div>
-                    <div class="rowform">
-                        <input type="submit" id="submit" value="Submit">
-                    </div>
-            </form>
         </div>
-    </div>
-</div>
-    <script src="./JS/admin.js"></script>
+        <script src="./JS/admin.js"></script>
 </body>
+
 </html>
