@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="./CSS/admin.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
     <style>
         .material-symbols-outlined {
             font-variation-settings:
@@ -16,7 +14,6 @@
                 'GRAD' 0,
                 'opsz' 48
         }
-
 
         .sidebar a.dashboard {
             background-color: black;
@@ -129,23 +126,21 @@
                     </div>
                 </div>
             </div>
-            <div class="header">
-                <h2>Delete Item</h2>
-            </div>
+            <div class="header"> <h2>Edit in Item</h2> </div>
             <div class="gallery">
                 <div class="row">
                     <div class="background">
                         <div class="containerform">
-                            <!-- /////////////////delete////////////////// -->
-                            <form class="form" action="Admin.html" method="get" onsubmit="return validate(this)">
+                            <!-- //////////////////update///////////////// -->
+                            <form class="form" action="Admin.html" method="get" onsubmit="return validate1(this)">
                                 <div class="rowform">
                                     <div class="col-25">
                                         <label for="productname">Product Name</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" id="productname" name="productname"
+                                        <input type="text" id="upproductname" name="upproductname"
                                             placeholder="Enter the product name..">
-                                        <div id="nameid" class="err"></div>
+                                        <div id="upnameid" class="err"></div>
                                     </div>
                                 </div>
                                 <div class="rowform">
@@ -153,35 +148,78 @@
                                         <label for="ID"> Product ID</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="text" id="ID" name="ProductID" placeholder="Enter product ID..">
-                                        <div id="idid" class="err"></div>
+                                        <input type="text" id="upID" name="upProductID" placeholder="Enter product ID..">
+                                        <div id="upidid" class="err"></div>
                                     </div>
                                 </div>
-                                <div class="rowform" style=" margin-top: 1rem">
-                                    <input type="submit" id="submit" value="Submit">
+                                <div class="rowform">
+                                    <div class="col-25">
+                                        <label for="category">Category</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <select id="category" name="category">
+                                            <option value="armchair">Armchair</option>
+                                            <option value="beds">Beds</option>
+                                            <option value="australia">Benches</option>
+                                            <option value="beanbag">Bean Bags</option>
+                                            <option value="clounge">Chaise Lounges</option>
+                                            <option value="usa">Living Room Set</option>
+                                            <option value="kids">Kids Furniture</option>
+                                            <option value="Pet">Pets Furniture</option>
+                                            <option value="space">Space Friendly</option>
+                                        </select>
+                                        <div id="catorgyid" class="err"></div>
+                                    </div>
                                 </div>
+                                <div class="rowform">
+                                    <div class="col-25">
+                                        <label for="subject">Choose diffrent color</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input id="color" name="colorpicker" type="color">
+                                        <div id="colorid" class="err"></div>
+                                    </div>
+                                </div>
+                                <div class="rowform">
+                                    <div class="col-25">
+    
+                                        <label for="subject">Update the price</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="number" min="1" step="any" id="price" name="price"
+                                            placeholder="Decimals are accepted">
+                                        <div id="priceid" class="err"></div>
+                                    </div>
+                                </div>
+                                <div class="rowform">
+                                    <div class="col-25">
+    
+                                        <label for="subject">Update the quantity</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="number" min="1" id="quantity" name="quamtity"
+                                            placeholder="Enter a whole posisitive number ..">
+                                        <div id="quantityid" class="err"></div>
+                                    </div>
+                                </div>
+                                <div class="rowform">
+                                    <div class="col-25">
+    
+                                        <label for="subject">Update Photo of the product</label>
+                                    </div>
+                                    <div class="col-65">
+                                        <input type="file" id="photo" name="photo">
+                                    </div>
+                                    <div class="rowform">
+                                        <input type="submit" id="submit" value="Submit">
+                                    </div>
                             </form>
-                            <!-- /////////////////end of delete//////////////////////////// -->
                         </div>
                     </div>
-                    <!-- <div class="content">
-                        <section class="hoveringimgs">
-                            <div class="box">
-                                <img src="./Images/Corinne_25.6_Wide_Wingback_Chair.webp" class="hoveredimg" alt="chair"
-                                    style="width:100%">
-                                <img src="./Images/Corinne_25.6_Wide_Wingback_Chair_11.jpg" alt="texture"
-                                    class="hover_img" style="width:100%">
-                            </div>
-                            <div class="container">
-                                <h4><b>Acadia Chaise Lounge</b></h4>
-                                <p class="deals">9200 EGP</p>
-                                <p>Now for ONLY 7000 EGP</p>
-                            </div>
-                    </div> -->
-
                 </div>
             </div>
-            <h3 id="subhead">Recently Deleted</h3>
+            </div>
+           <h3 id="subhead">Recently Edited</h3>
             <div class="row">
                 <div class="content">
                     <section class="hoveringimgs">
@@ -209,7 +247,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
