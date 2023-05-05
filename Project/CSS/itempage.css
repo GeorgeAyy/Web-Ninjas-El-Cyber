@@ -878,9 +878,10 @@ padding: 10px;
 .products .product-image img {
   width: 100%;
   height: auto;
+  margin-bottom: 30px;
 }
 .products .product-image .pic-1 {
-  transition: 0.5s;
+  transition: 1.2s;
 }
 
 .products .product-image:hover .pic-1 {
@@ -894,12 +895,13 @@ padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
-  transition: 0.5s;
+  transition: 1.2s;
 }
 
 .products .product-image:hover .pic-2 {
   opacity: 1;
   transform: scale(1.2);
+  
 }
 .products .product-image .discount {
   color: #fff;
@@ -941,45 +943,96 @@ padding: 10px;
     }
  } 
 
-
-
-.products .product-image .product-btn {
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  transform: translateY(100%);
-  z-index: 3;
-  transition: 0.5s ease 0s;
-  text-align: center;
-  pointer-events: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  opacity: 0.85;
+ .products .links{
+  color:#000;
+  background: #fff;
+  font-size: 14px;
+  font-family: 500;
+  width: 100%; 
+  opacity: 0;
   transform: translateX(-50%);
   position: absolute;
-  bottom: -70%;
-  left: 50%;
+  bottom: -75%;
+  left:50%;
+  list-style: none;
+  transition: .4s;
 }
 
-.products .product-image:hover .product-btn {
-  bottom: 10%;
+.products .Icon a{
+  color:#0c0c0c;
+  line-height: 30px;
+  width: 40px;
+  height: 40px;
+  transition: .4s;
+  padding: 5px;
+  text-decoration: none;
+}
+
+ .products:hover .links{
+  bottom: 0;
   opacity: 1;
+} 
+
+
+.products .links .Icon{
+  display:inline-flex;
+  margin-left: 10px;
 }
 
-.products .product-image .product-btn a {
-  flex: 0 0 auto;
-  vertical-align: middle;
-  width: 20%;
-  transform: translateY(10px);
-  transition: 0.3s;
-  color: #000;
-  border: none;
+.Icon:hover{
+  transform: translateY(0px);
 }
 
-.products .product-image:hover .product-btn a:hover {
-    color: #fff;
+.products .Icon a:hover{
+  color: #fff;
+  background-color: #000;
+ 
 }
+
+
+.Icon .tooltiptext {
+  visibility: hidden;
+  width: 123px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 20;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+}
+.Icon .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  margin-left: -1px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+ .Icon:hover .tooltiptext{
+  visibility: visible;
+}
+@media screen and (max-width:767px){
+   .Icon:hover .tooltiptext{
+    visibility: hidden;
+  }
+
+  .products .links .Icon{
+    margin-left: 2px;
+  } 
+
+  .products .links{
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
 
 .products .Content .product-title {
   font-weight: 600;
