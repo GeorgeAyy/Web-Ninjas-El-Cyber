@@ -578,6 +578,7 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  
 }
 
 .col-25 {
@@ -645,16 +646,16 @@ textarea {
 
 .background {
   background-color: #F0EEED;
-  width: 100%;
+  /* width: 100%; */
 
 }
 
 .bod-ish {
-  padding: 1px 16px;
+  /* padding: 1px 16px; */
   text-align: center;
   position: relative;
-  left: 30rem;
-  width: 55rem;
+  /* left: 30rem; */
+  /* width: 55rem; */
 }
 .gallery{
   display: flex;
