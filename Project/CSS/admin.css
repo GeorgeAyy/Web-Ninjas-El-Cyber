@@ -245,8 +245,10 @@ i {
   margin: 0;
   padding: 0;
   top: 0;
+
   background-color: #f5f3f3;
   position: relative;
+
   overflow: auto;
   min-width: 15%;
   max-height: 100%;
@@ -480,6 +482,7 @@ h3 {
 h2 {
   text-align: center;
   margin-top: 4rem;
+}
 
 }
 /* #subhead{
@@ -498,7 +501,9 @@ h2 {
   {
     margin-left: 0;
     margin-right: 30%;
+
 }
+
 }
 
 .row {
@@ -690,6 +695,7 @@ textarea {
     position: relative;
   }
 }
+
 .box{
   width:100%;
   display:flex;
@@ -701,3 +707,4 @@ textarea {
 .barpage{
 display: inline-flex;
 }
+
