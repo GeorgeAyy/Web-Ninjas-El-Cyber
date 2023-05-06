@@ -1,0 +1,27 @@
+{
+  "name": "frntr",
+  "version": "1.0.0",
+  "description": "he premium destination for high-quality furniture at affordable prices. Our website is currently static, but we have implemented several front-end features to enhance your shopping experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeAyy/Web-Ninjas-El-Cyber.git"
+  },
+  "author": "George, Zeina, Nouran, Yassmin, Farrah",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/GeorgeAyy/Web-Ninjas-El-Cyber/issues"
+  },
+  "homepage": "https://github.com/GeorgeAyy/Web-Ninjas-El-Cyber#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.4.0",
+    "nodemon": "^2.0.22"
+  }
+}
