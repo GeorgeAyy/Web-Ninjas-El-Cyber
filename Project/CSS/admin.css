@@ -268,7 +268,24 @@ i {
   width: 20%;
   margin-left: 15px;
 }
-
+.content-x {
+  transition: 0.3s;
+  width: 50%;
+  margin-left: 15px;
+}
+.content-z{
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  transition: 0.3s;
+  width: 20%;
+  margin-left: 15px;
+}
+.rev{
+  padding: 2px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* transition: 0.3s; */
+  width: 100%;
+  margin-left: 15px;
+}
 .hoveringimgs {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -286,7 +303,13 @@ i {
 .container {
   padding: 2px 10px;
 }
-
+.container-x{
+  padding: 2px 10px;
+}
+.container-z{
+  padding: 2px 10px;
+  height: 20%;
+}
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 50rem;
@@ -484,7 +507,6 @@ h2 {
   margin-top: 4rem;
 }
 
-}
 /* #subhead{
   display: contents;
   justify-content: center;
@@ -707,4 +729,11 @@ textarea {
 .barpage{
 display: inline-flex;
 }
-
+.fullrev{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 55%;
+  margin-left: 15px;
+  display: inline-flex;
+  margin: 15px;
+}
