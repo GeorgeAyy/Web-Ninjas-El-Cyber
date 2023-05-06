@@ -309,7 +309,7 @@ i {
   padding: 2px 10px;
   height: 20%;
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .sidebar {
     height: auto;
     position: relative;
@@ -319,7 +319,7 @@ i {
     text-align: center;
     float: none;
   }
-}
+} */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -357,11 +357,14 @@ i {
   .sidebar a 
   {
     float: left;
-    padding: 1.5px;
+    padding: 3px;
   }
   div.content 
   {margin-left: 0;}
 }
+/* @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}} */
 .header {
   display: contents;
   padding-top: 1px;
