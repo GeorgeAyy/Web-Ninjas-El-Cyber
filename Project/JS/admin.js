@@ -69,3 +69,4 @@ function validateProductName(field){
       return false;
     }
   }
+  

@@ -245,13 +245,12 @@ i {
   margin: 0;
   padding: 0;
   top: 0;
-
   background-color: #f5f3f3;
   position: relative;
-
   overflow: auto;
   min-width: 15%;
   max-height: 100%;
+  display: flex;
 }
 
 .sidebar a {
@@ -310,72 +309,59 @@ i {
   padding: 2px 10px;
   height: 20%;
 }
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 50rem;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  div.content {
-    margin-left: 0;
-  }
-
-  div.spacing {
-    margin-left: 0;
-  }
-}
-@media screen and (max-width: 1210px) {
-  .sidebar {
-    width: rem;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  div.content {
-    margin-left: 0;
-  }
-
-  div.spacing {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 448px) {
-  .sidebar {
-    width: 30rem;
-    height: auto;
-    position: relative;
-  }
-
-  .sidebar a {
-    float: left;
-  }
-
-  div.content {
-    margin-left: 0;
-  }
-
-  div.spacing {
-    margin-left: 0;
-  }
-}
-
 @media screen and (max-width: 400px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
   .sidebar a {
+    width: 100%;
     text-align: center;
     float: none;
   }
 }
-
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a 
+  {
+    float: left;
+    padding: 10px;
+  }
+  div.content 
+  {margin-left: 0;}
+}
+@media screen and (max-width: 593px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a 
+  {
+    float: left;
+    padding: 5px;
+  }
+  div.content 
+  {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a 
+  {
+    float: left;
+    padding: 1.5px;
+  }
+  div.content 
+  {margin-left: 0;}
+}
 .header {
   display: contents;
   padding-top: 1px;
@@ -404,7 +390,7 @@ i {
   margin-left: 16%;
 }
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:600px) {
   div.row {
     margin-left: 0px;
   }
@@ -417,7 +403,7 @@ i {
     width: 50%;
   }
 
-}
+} */
 
 .row:after {
   content: "";
@@ -431,20 +417,26 @@ i {
     display: block;
     margin-bottom: 20px;
   }
-
-  .spacing {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .icontent {
-    width: 100%;
-    display: block;
+  .content-z {
+    width: fit-content;
+    display: none;
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 981px) {
+  .col-2y{
+    display: none;
+    width:fit-content;
+  
+  }
+  .col-3y
+  {
+    width: fit-content;
+    right: 0;
+    position: absolute;
+  }
 
+ }
 .deals {
   text-decoration: line-through;
 }
@@ -506,28 +498,6 @@ h2 {
   text-align: center;
   margin-top: 4rem;
 }
-
-/* #subhead{
-  display: contents;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  width: 55rem;
-} */
-@media screen and (max-width: 1000px) {
-  h2 {
-    margin-left: 0;
-    margin-right: 30%;
-  }
-  #subhead
-  {
-    margin-left: 0;
-    margin-right: 30%;
-
-}
-
-}
-
 .row {
   margin-bottom: 5%;
 }
@@ -557,7 +527,7 @@ h2 {
   text-align: center;
 }
 
-.spacing {
+/* .spacing {
   width: 20%;
   margin-left: 15px;
 }
@@ -565,7 +535,7 @@ h2 {
 .icontent {
   width: 20%;
   margin-left: 15px;
-}
+} */
 
 input[type=text],
 select,
