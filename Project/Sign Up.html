@@ -131,7 +131,7 @@
               <nav class="nav11">
                       
                   <ul>
-                    <button class="side-btn" onclick=></button><i class="material-icons">search</i></button>
+                    <button class="side-btn" onclick="searchOpen()"><i class="material-icons">search</i></button>
                     <button class="side-btn"  onclick="signOpen()"><i class="material-icons">person</i></button> 
                     <a href="wishlist.html"><button class="side-btn" onclick=><i class="material-icons">favorite</i></button></a>
                     <button class="side-btn" onclick="cartOpen()"><i class="material-icons">shopping_cart</i></button>
@@ -173,6 +173,110 @@
       </form>
   </div>
 </div>
+
+
+<div id="sidebar-1" class="sidebar">
+
+  <div class="insidesidebar">
+    <div class="title1">
+        <span id="log">LOGIN</span>
+        <button class="side-btn1"><i class="material-icons" onclick="signclose()">close</i></button>
+    </div>
+   
+  </div>
+  <div class="sign">
+        <form name="sign-in" action="#" method="get" onsubmit="return validate1(this)">
+            <input id="ema1" type="email" class="element" name="email" placeholder="Email" >
+            <div id="em1" class="err1"></div>
+            <input id="pas1"style="margin-top: 10px; margin-bottom: 5px;" type="password" class="element" name="pas" placeholder="Password">
+            <div id="passwor" class="err1"></div>
+            <span class="forgot"><button class="forgot1" name="forgotpassword" onclick="openforgotsidebar()">Forgot your password?</button></span><br>
+            <input class="sub" type="submit" value="Sign In"><br>
+            <a href="Sign Up.html" class="forgot">New customer? Create your account</a>
+        </form>
+    </div>
+  </div>
+  
+  
+  
+  <div id="sidebar-2" class="sidebar">
+  
+    <div class="insidesidebar">
+      <div class="title1">
+          <span id="log">SEARCH OUR SITE</span>
+          <button class="side-btn2"><i class="material-icons" onclick="searchclose()">close</i></button>
+      </div>
+     
+    </div>
+    <div class="sign">
+          <form name="search" action="#" method="get" id="search12">
+              <select id="options" class="element1" name="catego" placeholder="All Categories" >
+                <option value="*">All Categories</option>
+                <option value="Baby Bed">Baby Bed</option>
+                <option value="Bean Bag">Bean Bag</option>
+                <option value="Bean Bag Chairs">Bean Bag Chairs</option>
+                <option value="Bean Bags">Bean Bags</option>
+                <option value="Beds">Beds</option>
+                <option value="Benches">Benches</option>
+                <option value="Chair Bed">Chair Bed</option>
+                <option value="Chairs">Chairs</option>
+                <option value="Chaise Lounge">Chaise Lounge</option>
+                <option value="Chaise Lounges">Chaise Lounges</option>
+                <option value="Closet">Closet</option>
+                <option value="Coffee Tables">Coffee Tables</option>
+                <option value="Console Table">Console Table</option>
+                <option value="Dining Tables">Dining Tables</option>
+                <option value="Dresser">Dresser</option>
+                <option value="Duvet Covers">Duvet Covers</option>
+                <option value="Kid Chair">Kid Chair</option>
+                <option value="Kids Chairs">Kids Chairs</option>
+                <option value="Kids Chaise Lounge">Kids Chaise Lounge</option>
+                <option value="Kids Matresses">Kids Matresses</option>
+                <option value="Kids Seating Set">Kids Seating Set</option>
+                <option value="Lazy Boy Chair">Lazy Boy Chair</option>
+                <option value="Living Room Sets">Living Room Sets</option>
+                <option value="Lounge Chair">Lounge Chair</option>
+                <option value="Makeup Vanity">Makeup Vanity</option>
+                <option value="Mattress Protectors">Mattress Protectors</option>
+                <option value="Mattresses">Mattresses</option>
+                <option value="Mini Bed & Pouf">Mini Bed & Pouf</option>
+                <option value="Multifunctional Seating">Multifunctional Seating</option>
+                <option value="Neck Travel Pillow">Neck Travel Pillow</option>
+                <option value="Night Stands">Night Stands</option>
+                <option value="Office Furniture">Office Furniture</option>
+                <option value="Ottoman">Ottoman</option>
+                <option value="Ottomans">Ottomans</option>
+                <option value="Outdoor Set">Outdoor Set</option>
+                <option value="Pet Blanket">Pet Blanket</option>
+                <option value="Pet Couch">Pet Couch</option>
+                <option value="Pets Bed">Pets Bed</option>
+                <option value="Pets Cushion">Pets Cushion</option>
+                <option value="Pets Mat">Pets Mat</option>
+                <option value="Pillow">Pillow</option>
+                <option value="Pillows">Pillows</option>
+                <option value="Pouf">Pouf</option>
+                <option value="Side Tables">Side Tables</option>
+                <option value="Sofa Bed">Sofa Bed</option>
+                <option value="Sofas">Sofas</option>
+                <option value="Soft Foam Chair">Soft Foam Chair</option>
+                <option value="Stool">Stool</option>
+                <option value="Topper Mattress">Topper Mattress</option>
+                <option value="TV Tables">TV Tables</option>
+                <option value="TV Units">TV Units</option>
+              </select>
+  
+              
+              <div id="con11">
+              <input id="search1"style="margin-top: 10px; margin-bottom: 5px;" type="text" class="element1" name="search1" placeholder="Search"><button class="material-icons" id="mi1">search</button>
+              </div>
+              <div style="margin-top: 20px; margin-bottom: 30px;"></div>
+            
+          </form>
+      </div>
+    </div>
+
+
+
 <div id="forgotsidebar" class="sidebar">
 
   <div class="insidesidebar">
