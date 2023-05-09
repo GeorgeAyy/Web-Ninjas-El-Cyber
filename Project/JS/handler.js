@@ -57,6 +57,14 @@ function signclose() {
   document.getElementById("sidebar-1").style.display = "none";
 }
 
+function searchOpen() {
+  document.getElementById("sidebar-2").style.display = "block";
+}
+
+function searchclose() {
+  document.getElementById("sidebar-2").style.display = "none";
+}
+
 function cartOpen() {
   document.getElementById("cartsidebar").style.display = "block";
 }
