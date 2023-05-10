@@ -360,6 +360,7 @@ img {
   height: 40px;
   line-height: 40px;
   margin-left: 10px;
+  padding-left: 4px;
   color: #222;
   border: 1px solid #222;
   text-align: center;
@@ -615,7 +616,7 @@ padding: 10px;
     padding: 0 7px 7px;
     position: relative;
     width: 100%;
-    /* border: 2px solid black; */
+  
 }
 .review-bottom .review-bottom-1 .rate{
     /* border: 2px solid black; */
@@ -948,7 +949,7 @@ padding: 10px;
   background: #fff;
   font-size: 14px;
   font-family: 500;
-  width: 100%; 
+  /* width: 100%;  */
   opacity: 0;
   transform: translateX(-50%);
   position: absolute;
@@ -956,6 +957,7 @@ padding: 10px;
   left:50%;
   list-style: none;
   transition: .4s;
+  display: inline-flex;
 }
 
 .products .Icon a{
@@ -975,7 +977,6 @@ padding: 10px;
 
 
 .products .links .Icon{
-  display:inline-flex;
   margin-left: 10px;
 }
 
@@ -1017,13 +1018,26 @@ padding: 10px;
  .Icon:hover .tooltiptext{
   visibility: visible;
 }
+@media screen and (max-width:1024px){
+
+  .Icon:hover .tooltiptext{
+    visibility: hidden;
+  }
+
+  .products .links{
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width:767px){
    .Icon:hover .tooltiptext{
     visibility: hidden;
   }
 
   .products .links .Icon{
-    margin-left: 2px;
+    margin-left: 1px;
+    
   } 
 
   .products .links{
