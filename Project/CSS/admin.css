@@ -712,3 +712,17 @@ display: inline-flex;
   display: inline-flex;
   margin: 15px;
 }
+.content .links{
+  color:#000;
+  background: #fff;
+  font-size: 14px;
+  font-family: 500;
+  width: 100%; 
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -75%;
+  left:50%;
+  list-style: none;
+  transition: .4s;
+}
