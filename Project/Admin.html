@@ -7,6 +7,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        div.contenty {
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
         .material-symbols-outlined {
 
             font-variation-settings:
@@ -30,6 +89,9 @@
 </head>
 
 <body>
+
+    <!-- <div class="barpage"> -->
+
     <div class="sidebar">
         <a class="dashboard" href="Admin.html">Dashboard</a>
         <a class="products" href="products.html">Products</a>
@@ -39,9 +101,7 @@
         <a class="review" href="reviews.html">Reviews</a>
         <a class="offers" href="offers.html">Hot Offers</a>
     </div>
-    <div class="barpage">
-
-        
+    <div class="contenty">
         <div class="sideCon">
             <div class="header-y">
                 <div class="row-1y">
@@ -142,7 +202,8 @@
                         <section class="hoveringimgs">
                             <div class="box">
                                 <img src="./Images/Yerevan_11.webp" class="hoveredimg" alt="Sofa" style="width:100%">
-                                <img src="./Images/Yerevan_10.webp" alt="Nyla Bbaby Blye sofa" class="hover_img" style="width:100%">
+                                <img src="./Images/Yerevan_10.webp" alt="Nyla Bbaby Blye sofa" class="hover_img"
+                                    style="width:100%">
                             </div>
                             <div class="container">
                                 <h4><b>Malia Vanity Stool Chair</b></h4>
@@ -271,10 +332,8 @@
                 <div class="content">
                     <section class="hoveringimgs">
                         <div class="box">
-                            <img src="./Images/NylaBabyBlue2.webp" class="hoveredimg" alt="Avatar"
-                                style="width:100%">
-                            <img src="./Images/NylaBabyBlue3.webp" alt="texture" class="hover_img"
-                                style="width:100%">
+                            <img src="./Images/NylaBabyBlue2.webp" class="hoveredimg" alt="Avatar" style="width:100%">
+                            <img src="./Images/NylaBabyBlue3.webp" alt="texture" class="hover_img" style="width:100%">
                         </div>
                         <div class="container">
                             <h4><b>Nyla Baby Blue</b></h4>
@@ -312,9 +371,9 @@
                 </div>
             </div>
         </div>
-
     </div>
-    </div>
+    <!-- </div> -->
+    <!-- </div> -->
 </body>
 
 </html>

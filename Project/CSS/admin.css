@@ -250,7 +250,7 @@ i {
   overflow: auto;
   min-width: 15%;
   max-height: 100%;
-  display: flex;
+  /* display: flex; */
 }
 
 .sidebar a {
