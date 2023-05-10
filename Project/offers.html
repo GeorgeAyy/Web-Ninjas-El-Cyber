@@ -4,11 +4,90 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/admin.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        div.contenty {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.contenty {
+                margin-left: 0;
+                padding: 0;
+            }
+        }
+
+        @media screen and(max-width: 1400) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.contenty {
+                margin-left: 0;
+                /* padding: 0; */
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
+        .material-symbols-outlined {
+
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
         .sidebar a.offers {
             background-color: black;
             color: white;
@@ -24,10 +103,15 @@
 <body>
     <div class="sidebar">
         <a class="dashboard" href="Admin.html">Dashboard</a>
+        <a class="products" href="products.html">Products</a>
+        <a class="orders" href="orders.html">Orders</a>
+        <a class="customers" href="customers.html">Customers</a>
+        <a class="stat" href="statistics.html">Statistics</a>
+        <a class="review" href="reviews.html">Reviews</a>
         <a class="offers" href="offers.html">Hot Offers</a>
-     </div>
-   <div class="barpage">
-       
+    </div>
+    <div class="contenty">
+
         <div class="sideCon">
             <div class="header-y">
 
@@ -143,35 +227,35 @@
                     </div>
 
                 </div>
-                    </div>
-                <div class="header">
-
-                    <h2>Hot Offers</h2>
-                </div>
-                <div class="gallery">
-                    <div class="row">
-                        <div class="content">
-                            <img src="./Images/Acadia_Chaise_Lounge_Ocean_Blue.png" alt="Avatar" style="width:100%">
-                            <div class="container">
-                                <h4><b>Acadia Chaise Lounge</b></h4>
-                                <p class="deals">9200 EGP</p>
-                                <p>Now for ONLY 7000 EGP</p>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <img src="./Images/Acadia_Chaise_Lounge_Ocean_Blue.png" alt="Avatar" style="width:100%">
-                            <div class="container">
-                                <h4><b>Acadia Chaise Lounge</b></h4>
-                                <p class="deals">9200 EGP</p>
-                                <p>Now for ONLY 7000 EGP</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
+            <div class="header">
+
+                <h2>Hot Offers</h2>
+            </div>
+            <div class="gallery">
+                <div class="row">
+                    <div class="content">
+                        <img src="./Images/Acadia_Chaise_Lounge_Ocean_Blue.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Acadia Chaise Lounge</b></h4>
+                            <p class="deals">9200 EGP</p>
+                            <p>Now for ONLY 7000 EGP</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img src="./Images/Acadia_Chaise_Lounge_Ocean_Blue.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>Acadia Chaise Lounge</b></h4>
+                            <p class="deals">9200 EGP</p>
+                            <p>Now for ONLY 7000 EGP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+    </div>
     </div>
 </body>
 

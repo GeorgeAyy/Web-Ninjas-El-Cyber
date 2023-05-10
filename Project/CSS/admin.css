@@ -422,8 +422,10 @@ i {
   }
   .content-z {
     width: fit-content;
-    display: none;
     margin-bottom: 20px;
+  }
+  .content-x{
+    display: none;
   }
 }
 @media screen and (max-width: 981px) {
