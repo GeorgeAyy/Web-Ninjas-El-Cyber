@@ -7,6 +7,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        div.contenty {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.contenty {
+                margin-left: 0;
+                padding: 0;
+            }
+        }
+
+        @media screen and(max-width: 1400) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.contenty {
+                margin-left: 0;
+                /* padding: 0; */
+            }
+        }
+
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
         .material-symbols-outlined {
 
             font-variation-settings:
@@ -15,7 +85,6 @@
                 'GRAD' 0,
                 'opsz' 48
         }
-
 
         .sidebar a.stat {
             background-color: black;
@@ -39,9 +108,9 @@
         <a class="review" href="reviews.html">Reviews</a>
         <a class="offers" href="offers.html">Hot Offers</a>
     </div>
-    <div class="barpage">
+    <div class="contenty">
 
-      
+
         <div class="sideCon">
             <div class="header-y">
                 <div class="row-1y">
@@ -165,9 +234,9 @@
                             </div>
                         </section>
                     </div>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
