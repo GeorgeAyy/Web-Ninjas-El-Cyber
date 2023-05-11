@@ -285,19 +285,13 @@ i {
   width: 100%;
   margin-left: 15px;
 }
-.hoveringimgs {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 20%;
-}
+
 
 .content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.hoveringimgs:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+
 
 .container {
   padding: 2px 10px;
@@ -447,27 +441,7 @@ i {
 }
 
 /* //////////////////////////////////// */
-.hoveringimgs {
-  position: relative;
-  display: contents;
-  width: 10%;
-}
 
-.hover_img {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: none;
-  width: 10%;
-}
-
-.hoveringimgs:hover .hoveredimg {
-  display: none;
-}
-
-.hoveringimgs:hover .hover_img {
-  display: block;
-}
 
 h3 {
   /* padding-top: 1px;
@@ -693,11 +667,7 @@ textarea {
   }
 }
 
-.box{
-  width:100%;
-  display:flex;
-  margin-top: 10px;
-}
+
 .sideCon{
  height: fit-content;
 }
@@ -712,17 +682,144 @@ display: inline-flex;
   display: inline-flex;
   margin: 15px;
 }
-.content .links{
+.content .link{
   color:#000;
-  background: #fff;
-  font-size: 14px;
-  font-family: 500;
-  width: 100%; 
+background: #fff;
+font-size: 14px;
+font-family: 500;
+/* width: 100px;  */
+opacity: 0;
+transform: translateX(-50%);
+position: absolute;
+bottom: -75%;
+left:50%;
+list-style: none;
+transition: .4s;
+display: inline-flex;
+}
+.content:hover .link{
+bottom: 0;
+opacity: 1;
+} 
+.content .product-image{
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width:100%;
+  display:flex;
+  margin-top: 10px;
+}
+
+
+.content .product-image img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.content .product-image .pic-1{
+transition: .5s; 
+}
+.content .product-image:hover  .pic-1{
+opacity: 0;
+}
+
+.content .product-image .pic-2{
+ 
+  backface-visibility: hidden;
   opacity: 0;
-  transform: translateX(-50%);
   position: absolute;
-  bottom: -75%;
-  left:50%;
-  list-style: none;
-  transition: .4s;
+  top:0;
+  left: 0;
+   transition: .5s; 
+}
+
+.content .product-image:hover .pic-2
+{
+  opacity: 1;
+}
+
+.content .Icon a{
+  color:#0c0c0c;
+line-height: 30px;
+width: 40px;
+height: 40px;
+transition: .4s;
+padding: 5px;
+text-decoration: none;
+  
+}
+
+.content .link .Icon{
+  
+  margin-left: 10px;
+}
+
+.Icon:hover{
+  transform: translateY(0px);
+}
+
+.content .Icon a:hover{
+  color: #fff;
+  background-color: #000;
+ 
+}
+
+.content:hover .link{
+  bottom: 0px;
+  opacity: 1;
+}
+.Icon .tooltiptext {
+  visibility: hidden;
+  width: 123px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  z-index: 20;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 12px;
+}
+.Icon .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 45%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+ .Icon:hover .tooltiptext{
+  visibility: visible;
+}
+@media screen and (max-width:1024px){
+
+  .Icon:hover .tooltiptext{
+    visibility: hidden;
+  }
+
+  .content .link{
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width:767px){
+   .Icon:hover .tooltiptext{
+    visibility: hidden;
+  }
+
+  .content .link .Icon{
+    margin-left: 2px;
+    
+  } 
+
+  .content .link{
+    bottom: 0;
+    opacity: 1;
+  }
 }
